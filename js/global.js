@@ -15,7 +15,7 @@ $(document).ready(function () {
         },
         yAxis: {
             title: {
-                text: 'Nível'
+                text: 'Level'
             },
             plotLines: [{
                     value: 0,
