@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('#container').highcharts({
         exporting: { enabled: false },
         chart: {
-            type: 'column'
+            type: (screen.width < 800) ? 'bar' : 'column'
         },
         title: {
             text: ''
