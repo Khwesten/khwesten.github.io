@@ -10,4 +10,5 @@
     .page-break {
         page-break-before: always;
     }
+    blockquote { border: none; border-left: 3px solid gray }
 }
