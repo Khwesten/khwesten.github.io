@@ -2,7 +2,7 @@
 <html lang="en" ng-app="mainApp" ng-cloak>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CV</title>
 
     <link rel="stylesheet" href="vendor/bootsrap/css/bootstrap.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
@@ -23,7 +23,7 @@
         </blockquote>
     </div>
 
-    <div class="col-md-6" style="text-align: center; padding-top: 40px">
+    <div class="col-md-6 hidden-print" style="text-align: center; padding-top: 40px">
         <label class="test">
             <input type="radio" name="language" ng-model="main" ng-value="language[0]"/>
             <img height="50"
@@ -45,17 +45,23 @@
     <hr>
     <div class="col-xs-12 col-sm-6">
         <address>
-            <i class="fa fa-map-marker"></i>
-            <a href="{{urlMaps}}" target="_blank">
+            <p class="visible-print-block">
+                <i class="fa fa-map-marker"></i>
+                {{address}}
+                <br>
+                {{provincyState}}
+            </p>
+            <a class="hidden-print" href="{{urlMaps}}" target="_blank">
+                <i class="fa fa-map-marker" style="color: black"></i>
                 {{address}}
                 <br>
                 {{provincyState}}
             </a>
-            <br>
+            <div class="clearfix"></div>
             <i class="fa fa-phone"></i> {{phone}}
-            <br>
-            <i class="fa fa-envelope"></i>
-            <a href="mailto:#">{{email}}</a>
+            <div class="clearfix"></div>
+            <a class="hidden-print" href="mailto:#"><i class="fa fa-envelope" style="color: black"></i> {{email}}</a>
+            <p class="visible-print-block"><i class="fa fa-envelope"></i> {{email}}</p>
         </address>
     </div>
     <div class="col-xs-12 col-sm-6">
@@ -79,17 +85,20 @@
 
     <h3><i class="fa fa-users"></i> {{main.menuExperience}}</h3>
 
-    <div ng-repeat="job in main.jobs"
+    <div ng-repeat="job in main.jobs track by $index"
          class="col-lg-4" data-toggle="tooltip" data-placement="top" title="{{job.tools}}">
-        <div class="col-lg-12 box-exp">
+        <div class="col-lg-12 col-xs-4 box-exp">
             <h4>{{job.company}}</h4>
             <small>{{job.date}}</small>
             <h4>{{job.position}}</h4>
             <small>{{job.locate}}</small>
+            <div class="clearfix"></div>
+            <p class="visible-print-inline-block">{{job.tools}}</p>
         </div>
+        <div ng-show="(($index + 1) % 3 === 0)" class="clearfix"></div>
     </div>
 
-    <div class="clearfix"></div>
+    <div class="clearfix page-break"></div>
 
     <h3><i class="fa fa-folder-open"></i> {{main.menuFreelance}}</h3>
 

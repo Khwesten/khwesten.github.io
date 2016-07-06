@@ -198,7 +198,7 @@ mainApp.controller('MainController', function MainController($scope) {
                 {
                     url: "",
                     name: "Congresso Alagoano de Tecnologia (COALTI)",
-                    date: "2011 / 2014 / 2016 (em construção)",
+                    date: "2011 / 2014 / 2016",
                     description: "Website for event, developed with PHP + Doctrine + Slim + AngularJs + Moip API + MySql. Management of speakers, lectures, users, payments and certificates."
                 },
                 {
@@ -303,7 +303,7 @@ mainApp.controller('MainController', function MainController($scope) {
                 {
                     url: "",
                     name: "Congresso Alagoano de Tecnologia (COALTI)",
-                    date: "2011 / 2014 / 2016 (em construção)",
+                    date: "2011 / 2014 / 2016",
                     description: "Sitio Web para el evento, desarrollado con PHP + Doctrina + Slim + + API AngularJS MoIP + MySQL. Gestión de altavoces, conferencias, los usuarios, los pagos y certificados."
                 },
                 {
