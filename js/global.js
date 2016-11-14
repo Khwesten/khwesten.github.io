@@ -8,10 +8,12 @@ $(document).ready(function () {
             text: ''
         },
         xAxis: {
-            categories: ['PHP', 'Java', 'Python', 'C#', 'Symfony2', 'SLIM/Jersey (framework)', 'Doctrine/Hibernate (framework)',
+            categories: [
+                'PHP', 'Java', 'Node.js', 'Python', 'C#', 'Symfony2', 'SLIM/Jersey (framework)', 'Doctrine/Hibernate (framework)',
                 'SMART template', 'HTML5', 'CSS3', 'JS / jQuery', 'Knockout.js', 'AngularJS',
 				'Android', 'Ionic',
-                'Oracle', 'MySql', 'Postgress', 'CorelDRAW', 'PhotoShop', 'Blender']
+                'Oracle', 'MySql', 'Postgress', 'CorelDRAW', 'PhotoShop', 'Blender'
+            ]
         },
         yAxis: {
             title: {
@@ -34,19 +36,19 @@ $(document).ready(function () {
         },
         series: [{
                 name: 'BACK',
-                data: [9.0, 8.5, 6.0, 4.0, 7.0, 8.0, 9.0, 7.0]
+                data: [9.0, 8.5, 7.5, 6.0, 4.0, 7.0, 8.0, 9.0, 7.0]
             }, {
                 name: 'FRONT',
-                data: [null, null, null, null, null, null, null, null, 8.0, 8.5, 8.5, 8.5, 8.0]
+                data: [null, null, null, null, null, null, null, null, null, 8.0, 8.5, 8.5, 8.5, 8.0]
             }, {
 				name: 'MOBILE',
-                data: [null, null, null, null, null, null, null, null, null, null, null, null, null, 7.0, 8.0]
+                data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, 7.0, 8.0]
             }, {
                 name: 'DB',
-                data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 6.0, 8.0, 6.0]
+                data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 6.0, 8.0, 6.0]
             }, {
                 name: 'Design',
-                data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 9.0, 7.5, 6.0]
+                data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 9.0, 7.5, 6.0]
             }]
     });
 });
