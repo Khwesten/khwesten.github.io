@@ -3,13 +3,17 @@
  */
 var mainApp = angular.module('mainApp', []);
 
-mainApp.controller('MainController', function MainController($scope) {
+mainApp.controller('MainController', function MainController($scope, $http) {
     $scope.phone = "+55 (082) 9.9316-7395";
     $scope.email = "k-heiner@hotmail.com";
     $scope.skype = "khwesten.heiner";
     $scope.address = "Av. Sebastião Correia Rocha, Nº 1113 - Bl. 03 Ap. 02";
     $scope.provincyState = "Tabuleiro do Martins - Maceió / AL";
     $scope.urlMaps = "https://www.google.com.br/maps/place/Tabuleiro+do+Martins,+Macei%C3%B3+-+AL,+57061-410/@-9.5934739,-35.7692318,15z/data=!3m1!4b1!4m2!3m1!1s0x70148940e6771d9:0x3f32b2a34da75b70";
+
+    // $http.jsonp('data/pt-br.json').then(function(file){
+    //      console.log(file);
+    // });
 
     $scope.language = [
         {
@@ -21,7 +25,7 @@ mainApp.controller('MainController', function MainController($scope) {
             situation: "Brasileiro, solteiro - 25 anos",
             jobs: [
                 {
-                    tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java, MySql e SOAP/REST",
+                    tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
                     company: "Meu Tutor",
                     date: "Atual (desde 03/14)",
                     position: "Engenheiro de software Full-Stack",
@@ -133,7 +137,7 @@ mainApp.controller('MainController', function MainController($scope) {
             situation: "Brazilian, single - 25 years",
             jobs: [
                 {
-                    tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java, MySql e SOAP/REST",
+                    tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
                     company: "Meu Tutor",
                     date: "Current (since 03/14)",
                     position: "Full-Stack software engineer",
@@ -245,7 +249,7 @@ mainApp.controller('MainController', function MainController($scope) {
             situation: "Brasileño, solo - 25 años",
             jobs: [
                 {
-                    tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java, MySql e SOAP/REST",
+                    tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
                     company: "Meu Tutor",
                     date: "Actual (de 03/14)",
                     position: "Ingeniero de software Full-Stack",
