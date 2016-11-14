@@ -1,0 +1,111 @@
+{
+  "phrase": "O 10 nunca será alcançado, pois assim como o homem, a tecnologia está em constante evolução.",
+  "menuKnowledge": "Conhecimento",
+  "menuFreelance": "Freelances",
+  "menuExperience": "Experiência",
+  "description": "Graduado em análise de sistemas pela Faculdade de Ciências Exatas e Tecnológicas (FACET) do Centro de Estudos Superiores de Maceió (CESMAC), pós-graduando em Engenharia de software também pela FACET. Com experiência plena em desenvolvimento de sistemas, plataformas, sites e desenho.",
+  "situation": "Brasileiro, solteiro - 25 anos",
+  "jobs": [
+    {
+      "tools": "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java, MySql e SOAP/REST",
+      "company": "Meu Tutor",
+      "date": "Atual (desde 03/14)",
+      "position": "Engenheiro de software Full-Stack",
+      "locate": "Maceió/AL"
+    },
+    {
+      "tools": "HTML5, CSS3, JS, PHP e MySql",
+      "company": "TECK S",
+      "date": "Atual (desde 07/16)",
+      "position": "Engenheiro de software Full-Stack",
+      "locate": "Maceió/AL - João Pessoa/PB"
+    },
+    {
+      "tools": "MVC, HTML5, CSS3, JS(DurandalJS), PHP(Slim/Doctrine), MySql e REST",
+      "company": "Locadados",
+      "date": "2014-2015",
+      "position": "Programador Full-Stack Sr. (remoto)",
+      "locate": "Maceió/AL - Recife/PE"
+    },
+    {
+      "tools": "HTML5, CSS3, JS(jQuery), PHP e Postgress",
+      "company": "Bluevox",
+      "date": "2014",
+      "position": "Programador Full-Stack Pleno",
+      "locate": "Maceió/AL"
+    },
+    {
+      "tools": "HTML, CSS, JS, PHP e MySql",
+      "company": "Tami Eventos",
+      "date": "2014",
+      "position": "Programador PHP Pleno (remoto)",
+      "locate": "Maceió/AL"
+    },
+    {
+      "tools": "Java, MySql e CMD script",
+      "company": "Farmácia Permanente",
+      "date": "2013",
+      "position": "Analista Help Desk",
+      "locate": "Maceió/AL"
+    },
+    {
+      "tools": "CorelDraw e Photoshop",
+      "company": "Promo Comunicação Visual",
+      "date": "2012-2013",
+      "position": "Gerente/ Design",
+      "locate": "Maceió/AL"
+    },
+    {
+      "tools": "TDD, Java, Hibernate e Oracle",
+      "company": "Indra/Politec",
+      "date": "2012",
+      "position": "Programador Java Jr.",
+      "locate": "Maceió/AL"
+    },
+    {
+      "tools": "HTML, CSS, JS, PHP e MySql",
+      "company": "Associação de Software Livre do Nordeste",
+      "date": "2011-2012",
+      "position": "Programador PHP Jr.",
+      "locate": "Maceió/AL"
+    }
+  ],
+  "freelances": [
+    {
+      "url": "",
+      "name": "ProgressMe",
+      "date": "2016",
+      "description": "Criação de API de acesso a dados para 'jogo' que simula um processo interno da empresa, usando PHP + Slim + MySql."
+    },
+    {
+      "url": "http://www.epizzaonline.com.br",
+      "name": "E-Pizza",
+      "date": "2016",
+      "description": "Site de gerenciamento do estabelecimento e delivery, usando Symfony2 e MySql. Criação dos modulos de gerenciamento de estoque, pedidos, garçons e motoboys."
+    },
+    {
+      "url": "",
+      "name": "Congresso Alagoano de Tecnologia (COALTI)",
+      "date": "2011 / 2014 / 2016 (em construção)",
+      "description": "Site para o evento, usando PHP(Doctrine + Slim), AngularJS, MySql e API MOIP para pagamentos. Gerenciamento de palestrantes, palestras, usuários, pagamentos e certificados."
+    },
+    {
+      "url": "",
+      "name": "Congresso Acadêmico Integrado de Inovação e Tecnologia (CAIITE)",
+      "date": "2015",
+      "description": "Plataforma para gerenciamento do evento, usando PHP, Bootstrap e MySql. Gerenciamento de trabalhos enviados(upload de arquivos) e gerenciamento de correção por parte da banca examinadora, geração de certificado e gerenciamento de participantes."
+    },
+    {
+      "url": "http://www.ufal.br/pinacoteca/",
+      "name": "Pinacoteca",
+      "date": "2014",
+      "description": "Site para a pinacoteca da Universidade Federal de Alagoas (UFAL), usando PHP, Bootstrap e MySql. Gerenciamento de eventos, notícias, acervo de imagens, editais e agendamento de visita via email."
+    },
+    {
+      "url": "http://www.treinal.com.br/",
+      "name": "Treinal",
+      "date": "2014",
+      "description": "Site para escola de treinamentos, usando PHP, Bootstrap e MySql. Gerenciamento de cursos, pagamentos e participantes."
+    }
+  ]
+}
