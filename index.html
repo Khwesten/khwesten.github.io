@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/global.css">
 
-    <script src="js/angular.min.js"></script>
-    <script src="js/app.js"></script>
-
+    <!--"//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-sanitize.js"-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.1/angular-sanitize.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body ng-controller="MainController" style="background-color: lightgray">
 
@@ -77,8 +79,7 @@
     <div class="clearfix"></div>
     <hr style="margin-top: 10px">
     <div class="clearfix"></div>
-    <!--<p style="text-indent: 30px" ng-bind-html="html">{{main.description}}</p>-->
-    <p style="text-indent: 30px" >{{main.description}}</p>
+    <p ng-bind-html="main.description">{{main.description}}</p>
     <hr>
 
     <h3><i class="fa fa-book"></i> {{main.menuKnowledge}}</h3>
