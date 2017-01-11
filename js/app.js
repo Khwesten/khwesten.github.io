@@ -28,6 +28,13 @@ mainApp.controller('MainController', function MainController($scope) {
                     locate: "Maceió/AL"
                 },
                 {
+                    tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
+                    company: "@Comunicação",
+                    date: "Atual (desde 12/16)",
+                    position: "Programador Full-Stack Sr. (remoto)",
+                    locate: "Maceió/AL - PR/SP"
+                },
+                {
                     tools: "HTML5, CSS3, JS, PHP e MySql",
                     company: "TECK S",
                     date: "Atual (desde 07/16)",
@@ -140,6 +147,13 @@ mainApp.controller('MainController', function MainController($scope) {
                     locate: "Maceió/AL"
                 },
                 {
+                    tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
+                    company: "@Comunicação",
+                    date: "Current (since 12/16)",
+                    position: "Full-Stack Sr. Developer (remote)",
+                    locate: "Maceió/AL - PR/SP"
+                },
+                {
                     tools: "HTML5, CSS3, JS, PHP e MySql",
                     company: "TECK S",
                     date: "Current (since 07/16)",
@@ -250,6 +264,13 @@ mainApp.controller('MainController', function MainController($scope) {
                     date: "Actual (de 03/14)",
                     position: "Ingeniero de software Full-Stack",
                     locate: "Maceió/AL"
+                },
+                {
+                    tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
+                    company: "@Comunicação",
+                    date: "Actual (de 12/16)",
+                    position: "Programador Full-Stack Sr.(remoto)",
+                    locate: "Maceió/AL - PR/SP"
                 },
                 {
                     tools: "HTML5, CSS3, JS, PHP e MySql",
