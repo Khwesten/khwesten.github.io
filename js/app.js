@@ -17,7 +17,9 @@ mainApp.controller('MainController', function MainController($scope) {
             menuKnowledge: "Conhecimento",
             menuFreelance: "Freelances",
             menuExperience: "Experiência",
-            description: "Graduado em análise de sistemas pela Faculdade de Ciências Exatas e Tecnológicas (FACET) do Centro de Estudos Superiores de Maceió (CESMAC), pós-graduando em Engenharia de software também pela FACET. Com experiência plena em desenvolvimento de sistemas, plataformas, sites e desenho.",
+            description: "Graduado em análise de sistemas pela Faculdade de Ciências Exatas e Tecnológicas (FACET)" +
+            " do Centro de Estudos Superiores de Maceió (CESMAC) \n\r" +
+            "Pós-graduado em Engenharia de software também pela FACET/CESMAC.",
             situation: "Brasileiro, solteiro - 25 anos",
             jobs: [
                 {
@@ -136,7 +138,10 @@ mainApp.controller('MainController', function MainController($scope) {
             menuKnowledge: "Knowledge",
             menuFreelance: "Freelances",
             menuExperience: "Experiences",
-            description: "I have Degree in system analysis from Faculdade de Ciências Exatas e Tecnológias (FACET) of Centro de Estudos Superiores de Maceió (CESMAC), Post-degree in Software Engineering from Faculdade de Ciências Exatas e Tecnológias (FACET) of Centro de Estudos Superiores de Maceió (CESMAC). I have full experience with system development, plataforms development, websites and drawing.",
+            description: "Degree in system analysis from Faculdade de Ciências Exatas e Tecnológias (FACET) of" +
+            " Centro de Estudos Superiores de Maceió (CESMAC) \n\r " +
+            "Post-degree in Software Engineering from Faculdade" +
+            " de Ciências Exatas e Tecnológias (FACET) of Centro de Estudos Superiores de Maceió (CESMAC).",
             situation: "Brazilian, single - 25 years",
             jobs: [
                 {
@@ -255,7 +260,8 @@ mainApp.controller('MainController', function MainController($scope) {
             menuKnowledge: "Conocimiento",
             menuFreelance: "Freelances",
             menuExperience: "Experiencia",
-            description: "Licenciatura en Análisis de Sistemas en la Facultad de Ciencias Exactas y Tecnológicas (FACET) del Centro de Estudios Superiores de Maceió (CESMAC), estudiante de doctorado en ingeniería de software también por FACET. Con plena experiencia en el desarrollo de sistemas, plataformas, sitios web y diseño.",
+            description: "Licenciatura en Análisis de Sistemas en la Facultad de Ciencias Exactas y Tecnológicas (FACET) del Centro de Estudios Superiores de Maceió (CESMAC)" +
+            "\n\r Postgrado en ingeniería de software también por FACET/CESMAC.",
             situation: "Brasileño, solo - 25 años",
             jobs: [
                 {
