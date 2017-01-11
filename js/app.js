@@ -18,7 +18,7 @@ mainApp.controller('MainController', function MainController($scope) {
             menuFreelance: "Freelances",
             menuExperience: "Experiência",
             description: "Graduado em análise de sistemas pela Faculdade de Ciências Exatas e Tecnológicas (FACET)" +
-            " do Centro de Estudos Superiores de Maceió (CESMAC) <br>" +
+            " do Centro de Estudos Superiores de Maceió (CESMAC). " +
             "Pós-graduado em Engenharia de software também pela FACET/CESMAC.",
             situation: "Brasileiro, solteiro - 25 anos",
             jobs: [
