@@ -40,7 +40,7 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
                     tools: "HTML5, CSS3, JS, PHP e MySql",
                     company: "TECK S",
                     date: "Atual (desde 07/16)",
-                    position: "Engenheiro de software Full-Stack",
+                    position: "Engenheiro de software Full-Stack (remoto)",
                     locate: "Maceió/AL - João Pessoa/PB"
                 },
                 {
@@ -162,7 +162,7 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
                     tools: "HTML5, CSS3, JS, PHP e MySql",
                     company: "TECK S",
                     date: "Current (since 07/16)",
-                    position: "Full-Stack software engineer",
+                    position: "Full-Stack software engineer (remote)",
                     locate: "Maceió/AL - João Pessoa/PB"
                 },
                 {
@@ -283,7 +283,7 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
                     tools: "HTML5, CSS3, JS, PHP e MySql",
                     company: "TECK S",
                     date: "Actual (de 07/16)",
-                    position: "Ingeniero de software Full-Stack",
+                    position: "Ingeniero de software Full-Stack (remoto)",
                     locate: "Maceió/AL - João Pessoa/PB"
                 },
                 {

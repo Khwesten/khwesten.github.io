@@ -9,7 +9,7 @@ $(document).ready(function () {
         },
         xAxis: {
             categories: [
-                'PHP', 'Java', 'Node.js', 'Python', 'C#', 'Symfony2', 'SLIM/Jersey (framework)', 'Doctrine/Hibernate (framework)',
+                'PHP', 'Java', 'Node.js', 'Python', 'C#', 'Symfony2/Laravel/CI', 'SLIM/Jersey (framework)', 'Doctrine/Hibernate (framework)',
                 'SMART template', 'HTML5', 'CSS3', 'JS / jQuery', 'Knockout.js', 'AngularJS',
 				'Android', 'Ionic',
                 'Oracle', 'MySql', 'Postgress', 'CorelDRAW', 'PhotoShop', 'Blender'
