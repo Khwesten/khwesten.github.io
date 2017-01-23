@@ -55,6 +55,10 @@ $(document).ready(function () {
     });
 });
 
+setInterval(function() {
+
+});
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });

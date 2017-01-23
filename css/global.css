@@ -5,10 +5,8 @@
 #container { width: 90% }
 
 @media print {
-    .box-exp { border: none; text-align: left; border-left: 3px solid gray; border-radius: 0 }
+    .box-exp { border: none; text-align: left; border-left: 3px solid gray; border-radius: 0; height: 200px; }
     .box-exp h4 { font-weight: bold }
-    .page-break {
-        page-break-before: always;
-    }
+    .page-break { page-break-before: always; }
     blockquote { border: none; border-left: 3px solid gray }
 }
