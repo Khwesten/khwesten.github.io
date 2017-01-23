@@ -26,21 +26,21 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
                     tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
                     company: "Meu Tutor",
                     date: "Atual (desde 03/14)",
-                    position: "Engenheiro de software Full-Stack",
+                    position: "Eng. de software Full-Stack",
                     locate: "Maceió/AL"
                 },
                 {
                     tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
-                    company: "@Comunicação",
+                    company: "Palmasite",
                     date: "Atual (desde 12/16)",
                     position: "Programador Full-Stack Sr. (remoto)",
-                    locate: "Maceió/AL - PR/SP"
+                    locate: "Maceió/AL - TO"
                 },
                 {
                     tools: "HTML5, CSS3, JS, PHP e MySql",
                     company: "TECK S",
                     date: "Atual (desde 07/16)",
-                    position: "Engenheiro de software Full-Stack (remoto)",
+                    position: "Eng. de software Full-Stack (remoto)",
                     locate: "Maceió/AL - João Pessoa/PB"
                 },
                 {
@@ -95,6 +95,13 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             ],
 
             freelances: [
+                {
+                    url: "",
+                    name: "Tocantins leilões",
+                    date: "2017",
+                    description: "Site de leilão, usando CMS espiga(PHP + JQuery) e MySql. Criação de" +
+                    " módulos, refatoração e reparo em código"
+                },
                 {
                     url: "",
                     name: "ProgressMe",
@@ -153,10 +160,10 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
                 },
                 {
                     tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
-                    company: "@Comunicação",
+                    company: "Palmasite",
                     date: "Current (since 12/16)",
                     position: "Full-Stack Sr. Developer (remote)",
-                    locate: "Maceió/AL - PR/SP"
+                    locate: "Maceió/AL - TO"
                 },
                 {
                     tools: "HTML5, CSS3, JS, PHP e MySql",
@@ -219,6 +226,13 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             freelances: [
                 {
                     url: "",
+                    name: "Tocantins leilões",
+                    date: "2017",
+                    description: "Website of auction, using CMS espiga(PHP + JQuery) and MySql. Creation of modules," +
+                    " refactoring and reapir on code"
+                },
+                {
+                    url: "",
                     name: "ProgressMe",
                     date: "2016",
                     description: "Creation of API to database access for the 'game' that simulate the internal process of company, developed with PHP + Slim + MySql."
@@ -274,10 +288,10 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
                 },
                 {
                     tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
-                    company: "@Comunicação",
+                    company: "Palmasite",
                     date: "Actual (de 12/16)",
                     position: "Programador Full-Stack Sr.(remoto)",
-                    locate: "Maceió/AL - PR/SP"
+                    locate: "Maceió/AL - TO"
                 },
                 {
                     tools: "HTML5, CSS3, JS, PHP e MySql",
@@ -338,6 +352,12 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             ],
 
             freelances: [
+                {
+                    url: "",
+                    name: "Tocantins leilões",
+                    date: "2017",
+                    description: "Sitio web de subasta, utilizando CMS espiga (PHP + JQuery) y MySql. Creación de módulos de refactorización y reparación en código"
+                },
                 {
                     url: "",
                     name: "ProgressMe",

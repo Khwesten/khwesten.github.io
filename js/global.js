@@ -9,10 +9,12 @@ $(document).ready(function () {
         },
         xAxis: {
             categories: [
-                'PHP', 'Java', 'Node.js', 'Python', 'C#', 'Symfony2/Laravel/CI', 'SLIM/Jersey (framework)', 'Doctrine/Hibernate (framework)',
-                'SMART template', 'HTML5', 'CSS3', 'JS / jQuery', 'Knockout.js', 'AngularJS',
+                'PHP', 'Java', 'Node.js', 'Python', 'C#', 'Symfony2/Laravel/CI', 'SLIM/Jersey (framework)',
+                'Doctrine/Hibernate (framework)', 'SMART template',
+                'HTML5', 'CSS3', 'JS / jQuery', 'Knockout.js', 'AngularJS',
 				'Android', 'Ionic',
-                'Oracle', 'MySql', 'Postgress', 'CorelDRAW', 'PhotoShop', 'Blender'
+                'Oracle/MySql/Postgress', 'Mongo/Dynamo',
+                'CorelDRAW', 'PhotoShop', 'Blender'
             ]
         },
         yAxis: {
@@ -45,10 +47,10 @@ $(document).ready(function () {
                 data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, 7.0, 8.0]
             }, {
                 name: 'DB',
-                data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 6.0, 8.0, 6.0]
+                data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 8.0, 7.0]
             }, {
                 name: 'Design',
-                data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 9.0, 7.5, 6.0]
+                data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 9.0, 7.5, 6.0]
             }]
     });
 });
