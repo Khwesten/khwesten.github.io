@@ -229,7 +229,7 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
                     name: "Tocantins leilões",
                     date: "2017",
                     description: "Website of auction, using CMS espiga(PHP + JQuery) and MySql. Creation of modules," +
-                    " refactoring and reapir on code"
+                    " refactoring and repair on code"
                 },
                 {
                     url: "",
