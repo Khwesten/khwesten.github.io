@@ -23,13 +23,6 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             situation: "Brasileiro, solteiro - 25 anos",
             jobs: [
                 {
-                    tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
-                    company: "Meu Tutor",
-                    date: "Atual (desde 03/14)",
-                    position: "Eng. de software Full-Stack",
-                    locate: "Maceió/AL"
-                },
-                {
                     tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
                     company: "Palmasite",
                     date: "Atual (desde 12/16)",
@@ -42,6 +35,13 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
                     date: "Atual (desde 07/16)",
                     position: "Eng. de software Full-Stack (remoto)",
                     locate: "Maceió/AL - João Pessoa/PB"
+                },
+                {
+                    tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
+                    company: "Meu Tutor",
+                    date: "2014-2017",
+                    position: "Eng. de software Full-Stack",
+                    locate: "Maceió/AL"
                 },
                 {
                     tools: "MVC, HTML5, CSS3, JS(DurandalJS), PHP(Slim/Doctrine), MySql e REST",
@@ -100,7 +100,7 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
                     name: "Tocantins leilões",
                     date: "2017",
                     description: "Site de leilão, usando CMS espiga(PHP + JQuery) e MySql. Criação de" +
-                    " módulos, refatoração e reparo em código"
+                    " módulos, refatoração e reparo em código."
                 },
                 {
                     url: "",
@@ -152,13 +152,6 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             situation: "Brazilian, single - 25 years",
             jobs: [
                 {
-                    tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
-                    company: "Meu Tutor",
-                    date: "Current (since 03/14)",
-                    position: "Full-Stack software engineer",
-                    locate: "Maceió/AL"
-                },
-                {
                     tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
                     company: "Palmasite",
                     date: "Current (since 12/16)",
@@ -171,6 +164,13 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
                     date: "Current (since 07/16)",
                     position: "Full-Stack software engineer (remote)",
                     locate: "Maceió/AL - João Pessoa/PB"
+                },
+                {
+                    tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
+                    company: "Meu Tutor",
+                    date: "2014-2017",
+                    position: "Full-Stack software engineer",
+                    locate: "Maceió/AL"
                 },
                 {
                     tools: "MVC, HTML5, CSS3, JS(DurandalJS), PHP(Slim/Doctrine), MySql e REST",
@@ -229,7 +229,7 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
                     name: "Tocantins leilões",
                     date: "2017",
                     description: "Website of auction, using CMS espiga(PHP + JQuery) and MySql. Creation of modules," +
-                    " refactoring and repair on code"
+                    " refactoring and repair on code."
                 },
                 {
                     url: "",
@@ -280,13 +280,6 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             situation: "Brasileño, solo - 25 años",
             jobs: [
                 {
-                    tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
-                    company: "Meu Tutor",
-                    date: "Actual (de 03/14)",
-                    position: "Ingeniero de software Full-Stack",
-                    locate: "Maceió/AL"
-                },
-                {
                     tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
                     company: "Palmasite",
                     date: "Actual (de 12/16)",
@@ -299,6 +292,13 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
                     date: "Actual (de 07/16)",
                     position: "Ingeniero de software Full-Stack (remoto)",
                     locate: "Maceió/AL - João Pessoa/PB"
+                },
+                {
+                    tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
+                    company: "Meu Tutor",
+                    date: "2014-2017",
+                    position: "Ingeniero de software Full-Stack",
+                    locate: "Maceió/AL"
                 },
                 {
                     tools: "MVC, HTML5, CSS3, JS(DurandalJS), PHP(Slim/Doctrine), MySql e REST",
@@ -356,7 +356,8 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
                     url: "",
                     name: "Tocantins leilões",
                     date: "2017",
-                    description: "Sitio web de subasta, utilizando CMS espiga (PHP + JQuery) y MySql. Creación de módulos de refactorización y reparación en código"
+                    description: "Sitio web de subasta, utilizando CMS espiga (PHP + JQuery) y MySql. Creación de" +
+                    " módulos de refactorización y reparación en código."
                 },
                 {
                     url: "",
