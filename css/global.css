@@ -1,12 +1,29 @@
-.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td { border-top: none }
-.box-exp { border: 2px dashed gray; background-color: #DCDCDC; text-align: center; margin-bottom: 10px; border-radius: 4px }
-.test input { opacity: 0.0; -moz-opacity: 0.0; filter: alpha(opacity = 0); }
-.test input:checked + img { border: 2px solid gray; padding: 5px; border-radius: 6px }
+body { background-color: #202020 !important; font-family: 'Roboto Condensed', sans-serif; }
+hr { border-top: 1px solid #202020 }
+a { color: #F39C12 !important; text-decoration: none; }
+blockquote { border-left: 5px solid #202020; }
+i { color: #F39C12 !important; }
+
 #container { width: 90% }
+
+.my-photo { float: left; margin-right: 10px }
+.name { color: #F39C12; text-transform: uppercase }
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td { border-top: none }
+.box-exp { background-color: #202020; text-align: center; margin-bottom: 10px; }
+.box-exp h4 { color: #F39C12;  }
+.test input { opacity: 0.0; -moz-opacity: 0.0; filter: alpha(opacity = 0); }
+.test input:checked + img { border: 2px solid #F39C12; padding: 5px; border-radius: 6px; background-color: #202020 }
+.container { background-color: #303030; color: white }
+.title { color: #F39C12; text-transform: uppercase; font-style: italic }
+.media-objects { max-height: 50px; max-width: 50px; }
+.back-tech { background-color: white; height: 70px; width: 70px; margin: 5px; display: inline-block; padding: 10px; line-height: 50px; }
+.back-tech img { margin: auto }
+.printable-notice { position: fixed; background-color: #F39C12; color: black; right: 0; top: 0; z-index: 99999; padding: 5px }
 
 @media print {
     .box-exp { border: none; text-align: left; border-left: 3px solid gray; border-radius: 0; height: 200px; }
     .box-exp h4 { font-weight: bold }
     .page-break { page-break-before: always; }
     blockquote { border: none; border-left: 3px solid gray }
+    a { color: black !important;     }
 }

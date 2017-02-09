@@ -4,130 +4,228 @@
     <meta charset="UTF-8">
     <title>CV</title>
 
-    <link rel="stylesheet" href="lib/bootsrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/global.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet" crossorigin="anonymous">
 
-    <!--"//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-sanitize.js"-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.1/angular-sanitize.min.js"></script>
     <script src="js/app.js"></script>
 </head>
-<body ng-controller="MainController" style="background-color: lightgray">
+<body ng-controller="MainController">
 
-<div class="container" style="background-color: white">
-    <div class="col-md-6">
-        <blockquote>
-            <h2>Khwesten Heiner Souza de Carvalho</h2>
-            <h4>{{main.situation}}</h4>
-        </blockquote>
+<div class="printable-notice">{{main.printable}}</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-xs-12">
+            <div class="col-xs-12 col-sm-3 hidden-print" style="padding: 0">
+                <img src="imgs/me.jpg" class="img img-responsive my-photo" height="100px">
+            </div>
+            <div class="col-xs-12 col-sm-9" style="text-transform: uppercase">
+                <h2 class="name">{{main.myName}} KHWESTEN HEINER</h2>
+                <h4>{{main.subtitle}}</h4>
+                <h5>{{main.situation}}</h5>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12 hidden-print" style="text-align: center; padding-top: 40px">
+            <label class="test">
+                <input type="radio" name="language" ng-model="main" ng-value="language[0]"/>
+                <img height="50"
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABWVBMVEUAAAAAAAAXVikAAAACAwAAAQACAgCEdAAzLQDfxQATEAABAQAVUSYBBgIKCQAGFgqlkQDYvAAFESzqzgAdczYdcDW+pwALKGsDDwdQRgAJIxEhgz4OMoX///8gfDseeTrVugAddjfOtQAbbDMYYi6slwAXXSyPfgASRiEPOBsDDAYONBlbTwAiHgApJQACCRkAAAAhgT02W6w+Ya+1nwCjjwAJIFSAl8p5awAQQB5vYQADBQoKKBI9NQADDSAuKADGrQD9/v6LoM95aQDp7fbG0OcKKBTHx8crLTIlTKTixwAOM4VFZbC2oADS0A+ynQH4+vybiQBzi8QiN2omkkZ0ZwFyZAAihD+WqNJgUwC2xOAKKBICCBU/NwA9NgDi5vMJIRAAAAAAAAAAAAAlkkUAAAD/4AAQO5sjiUH///8kjkP73AD93gD22ADv0gD42gAZQ58POZU1lD4fDkv1AAAAZHRSTlMAsO377vfx6N/95PXt6eng8fzg/vr59/Pi4N/+/fz8/Pz7+vf08/Ls5+Pj4uLg395k/fv69fHw6ufm5eLf393d+fDo5uHf3djH/v38+fb09O/u7Ojn5uXk4uLg4N/f3trRroc8tXqiJQAAAlZJREFUWMPtltlT4kAQh5FJwhUU8EBAEEU8ERBUVBTvY+/7vnf5TRIu3f3/H3aGRcbaXRGSF63ie0tN5avp6Z7usfXpczvIDjC+22w/vg2YIWsj4Lx5+RWmIDZAtdtHy2XdbgIVYAK9bBr9DghiJycxCwJ9gQBkQTcrsEuA0wlIdlOC0XHAvUrpqhsYH+1ZENkGFEeVMqoOBdiO9CSozHtAQsO0xXCIwDNf6V4w4wWWpynD5fO5KGN6GfDOdCmYHAIG19hffqcEhuT0s4+1QWBosguBvkQgb9UprTlkgHzMKIDsqFFa35JBlvSbBKoC7PBd13aBQPCnpmkTAWC3xuPZARS1oyCxCLjHKMcBrGstghIclDPmBhYT1wpWwoA0V6Ucv0xe5PL5i5YBsp9yqnMSEF75r6CyyWJMNegfnDgzGNEvb/PcEICztdBIEciblX8Fs14gHaeXSDg1nh7tc8f7e+wcILWX4mnAO/uXYIqnLknbuFDM8e3nnh9Hjf2CpilwidUkT+nUVcEIgWfjnAp8KGktHh4ZxoGWgY8Kzjc8ICOdBRmtTSFqFEpIUkH9kAs6h6BoggPDKGJYrMZFCB0OcUITHJ/CTQWv2CHenMaAJrg4Q+gyjYdPHv9KVLooJASFYB0Yo5waK6TxbktZCl75/50o5ZEeLlPzHB4EgDRP0f1PgKT2dp2VTKkIIMXiqr9uXmcTDYV83uOV0WwoJlras72GaGkWm6qltv4hYnqwPDIxWKyONuvDVRALh2N3/IXSlUC1m0ZlAgJLEPbUtUTW1qfPreA32LORcMzvoqkAAAAASUVORK5CYII="/>
+            </label>
+            <label class="test">
+                <input type="radio" name="language" ng-model="main" ng-value="language[1]"/>
+                <img height="50"
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABBVBMVEUAAAAAAAAAAAAEAAGNEh+amppWCxPR0dFVVVUiBQgNL3oDCx4CCBZVf9woXdLu7u5RfNtchN0sYNQwY9U9bddmjN9hh941ZtZJdtlNedqnFiRtkOB0luKyxe/V3/e+z/HF1PREcti3yfC7y/HL2PUAAACDERyZs+uiueyovu1PChHb5PjAwMClpaWJiYlKSkr8/Pz5ub+LqOcTAgRfDBWrwO4fBQc6CA3P2/V8fHz4+PiXFCEMK3Hn5+d2DxkBAwnwPlEDChvS0tKzNUFXHiQYFRYrKytiYmJTU1MAAADtHzQWT87////XHC8VSsEbU88lWtIdVdDeHTEhV9AaUc/KGizoHjM3Sf/5AAAASXRSTlMAsPju7cni3sDg7eDg9v7x9/T+/fvx8/z5+Pbv7uDf39764N/eZOzk4+Li4NXMxcD86efk4+Lh4N/C+PXs6+jn4+He2M7OxcC/7rr6ZQAAAhJJREFUWMPtlltX2lAQhWmwxLYmQoJCaonhoq1CvbS21rber8kETyDB//9T3BwI6lpySDg8+MC31jxm75k9s5Jk5sx5G2y8k2Ijo7hSKBnX/f9xDKdubkHMputC4J7GsOR+9sR0BwJ6hVFYC4lVdKKtEtHXKtGPPAT+tcX0BgLsC+x4MaK1gGjFICqUIDCReISg3qFOHY/WTPRQRA9lPoIyiVgg4v4R/DvwD+BvcIHvvpjlgYBRRwbryKCOxyrI4Fs/Ay25AFuDHS8G/xD+CFMzIXCzKGZ3lIGDDBy0vm6ihyJ6sIhShAjfuBj8Q/jrXOAwJ2Z7mIHDKGgExBwDPcD/Vxl7KCQ/pGgVdrwi+Hfgj2HKRnIBIr2BDBpo28EOav0e8nyELDj0vIPsOEYZxD0UIvijh3wwCnFpf/96QoimjQxsZGBjBw341yzsYRUCR6qq/vX9vQv1dVrDDrS+N0rrFyOysIeqnvyQkIGNDGxk8KeEPVRxCxof4e69mJ1RBtqw8iiLYQdhmkMym8igiQyaJnooogfobK1A4OcHMb8HAtw3LiuCP/ZQDJLegfwr7fzTGJRkI0gCgR3BnhKtcdkXkOSQWurUtGaTQVYCLtD1pqY7G4HtXDoO2t7DybOXanquzi5fhLi7mI7bY3/v6OnDIn9I8gKKBLO5xF57anqzOaTNhanBb570j6b8r+6cOW+CRxcQI5ptbJryAAAAAElFTkSuQmCC"/>
+            </label>
+            <label class="test">
+                <input type="radio" name="language" ng-model="main" ng-value="language[2]"/>
+                <img height="50"
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAARVBMVEUAAACNEh8AAACVEyEtKAAAAACDERwpJAAAAAAAAAC2HSbPtwDtKDKfFSNmGRJNQwA4MQD/4ADtHzQAAADv0gDfHTH01gBLzlg6AAAAEXRSTlMA7bDv3/ns4K9k8/r38uDg34AgAnsAAAB3SURBVFjD7dY5FoAgDEVRUBkdIeD+l6qHY2FrYkHx7wJemXwF0IfgBwEflCERo4isZrNEd6BmtopANwE9sukWkGgBN7G5FiiJrSCAAAII/BZgnbRjTuf+OmnfbUukB+usrzXnODa6k8+EgDQgnnnioSmfugBduACH/acO9Z5+xAAAAABJRU5ErkJggg=="/>
+            </label>
+        </div>
     </div>
 
-    <div class="col-md-6 hidden-print" style="text-align: center; padding-top: 40px">
-        <label class="test">
-            <input type="radio" name="language" ng-model="main" ng-value="language[0]"/>
-            <img height="50"
-                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABWVBMVEUAAAAAAAAXVikAAAACAwAAAQACAgCEdAAzLQDfxQATEAABAQAVUSYBBgIKCQAGFgqlkQDYvAAFESzqzgAdczYdcDW+pwALKGsDDwdQRgAJIxEhgz4OMoX///8gfDseeTrVugAddjfOtQAbbDMYYi6slwAXXSyPfgASRiEPOBsDDAYONBlbTwAiHgApJQACCRkAAAAhgT02W6w+Ya+1nwCjjwAJIFSAl8p5awAQQB5vYQADBQoKKBI9NQADDSAuKADGrQD9/v6LoM95aQDp7fbG0OcKKBTHx8crLTIlTKTixwAOM4VFZbC2oADS0A+ynQH4+vybiQBzi8QiN2omkkZ0ZwFyZAAihD+WqNJgUwC2xOAKKBICCBU/NwA9NgDi5vMJIRAAAAAAAAAAAAAlkkUAAAD/4AAQO5sjiUH///8kjkP73AD93gD22ADv0gD42gAZQ58POZU1lD4fDkv1AAAAZHRSTlMAsO377vfx6N/95PXt6eng8fzg/vr59/Pi4N/+/fz8/Pz7+vf08/Ls5+Pj4uLg395k/fv69fHw6ufm5eLf393d+fDo5uHf3djH/v38+fb09O/u7Ojn5uXk4uLg4N/f3trRroc8tXqiJQAAAlZJREFUWMPtltlT4kAQh5FJwhUU8EBAEEU8ERBUVBTvY+/7vnf5TRIu3f3/H3aGRcbaXRGSF63ie0tN5avp6Z7usfXpczvIDjC+22w/vg2YIWsj4Lx5+RWmIDZAtdtHy2XdbgIVYAK9bBr9DghiJycxCwJ9gQBkQTcrsEuA0wlIdlOC0XHAvUrpqhsYH+1ZENkGFEeVMqoOBdiO9CSozHtAQsO0xXCIwDNf6V4w4wWWpynD5fO5KGN6GfDOdCmYHAIG19hffqcEhuT0s4+1QWBosguBvkQgb9UprTlkgHzMKIDsqFFa35JBlvSbBKoC7PBd13aBQPCnpmkTAWC3xuPZARS1oyCxCLjHKMcBrGstghIclDPmBhYT1wpWwoA0V6Ucv0xe5PL5i5YBsp9yqnMSEF75r6CyyWJMNegfnDgzGNEvb/PcEICztdBIEciblX8Fs14gHaeXSDg1nh7tc8f7e+wcILWX4mnAO/uXYIqnLknbuFDM8e3nnh9Hjf2CpilwidUkT+nUVcEIgWfjnAp8KGktHh4ZxoGWgY8Kzjc8ICOdBRmtTSFqFEpIUkH9kAs6h6BoggPDKGJYrMZFCB0OcUITHJ/CTQWv2CHenMaAJrg4Q+gyjYdPHv9KVLooJASFYB0Yo5waK6TxbktZCl75/50o5ZEeLlPzHB4EgDRP0f1PgKT2dp2VTKkIIMXiqr9uXmcTDYV83uOV0WwoJlras72GaGkWm6qltv4hYnqwPDIxWKyONuvDVRALh2N3/IXSlUC1m0ZlAgJLEPbUtUTW1qfPreA32LORcMzvoqkAAAAASUVORK5CYII="/>
-        </label>
-        <label class="test">
-            <input type="radio" name="language" ng-model="main" ng-value="language[1]"/>
-            <img height="50"
-                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABBVBMVEUAAAAAAAAAAAAEAAGNEh+amppWCxPR0dFVVVUiBQgNL3oDCx4CCBZVf9woXdLu7u5RfNtchN0sYNQwY9U9bddmjN9hh941ZtZJdtlNedqnFiRtkOB0luKyxe/V3/e+z/HF1PREcti3yfC7y/HL2PUAAACDERyZs+uiueyovu1PChHb5PjAwMClpaWJiYlKSkr8/Pz5ub+LqOcTAgRfDBWrwO4fBQc6CA3P2/V8fHz4+PiXFCEMK3Hn5+d2DxkBAwnwPlEDChvS0tKzNUFXHiQYFRYrKytiYmJTU1MAAADtHzQWT87////XHC8VSsEbU88lWtIdVdDeHTEhV9AaUc/KGizoHjM3Sf/5AAAASXRSTlMAsPju7cni3sDg7eDg9v7x9/T+/fvx8/z5+Pbv7uDf39764N/eZOzk4+Li4NXMxcD86efk4+Lh4N/C+PXs6+jn4+He2M7OxcC/7rr6ZQAAAhJJREFUWMPtlltX2lAQhWmwxLYmQoJCaonhoq1CvbS21rber8kETyDB//9T3BwI6lpySDg8+MC31jxm75k9s5Jk5sx5G2y8k2Ijo7hSKBnX/f9xDKdubkHMputC4J7GsOR+9sR0BwJ6hVFYC4lVdKKtEtHXKtGPPAT+tcX0BgLsC+x4MaK1gGjFICqUIDCReISg3qFOHY/WTPRQRA9lPoIyiVgg4v4R/DvwD+BvcIHvvpjlgYBRRwbryKCOxyrI4Fs/Ay25AFuDHS8G/xD+CFMzIXCzKGZ3lIGDDBy0vm6ihyJ6sIhShAjfuBj8Q/jrXOAwJ2Z7mIHDKGgExBwDPcD/Vxl7KCQ/pGgVdrwi+Hfgj2HKRnIBIr2BDBpo28EOav0e8nyELDj0vIPsOEYZxD0UIvijh3wwCnFpf/96QoimjQxsZGBjBw341yzsYRUCR6qq/vX9vQv1dVrDDrS+N0rrFyOysIeqnvyQkIGNDGxk8KeEPVRxCxof4e69mJ1RBtqw8iiLYQdhmkMym8igiQyaJnooogfobK1A4OcHMb8HAtw3LiuCP/ZQDJLegfwr7fzTGJRkI0gCgR3BnhKtcdkXkOSQWurUtGaTQVYCLtD1pqY7G4HtXDoO2t7DybOXanquzi5fhLi7mI7bY3/v6OnDIn9I8gKKBLO5xF57anqzOaTNhanBb570j6b8r+6cOW+CRxcQI5ptbJryAAAAAElFTkSuQmCC"/>
-        </label>
-        <label class="test">
-            <input type="radio" name="language" ng-model="main" ng-value="language[2]"/>
-            <img height="50"
-                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAARVBMVEUAAACNEh8AAACVEyEtKAAAAACDERwpJAAAAAAAAAC2HSbPtwDtKDKfFSNmGRJNQwA4MQD/4ADtHzQAAADv0gDfHTH01gBLzlg6AAAAEXRSTlMA7bDv3/ns4K9k8/r38uDg34AgAnsAAAB3SURBVFjD7dY5FoAgDEVRUBkdIeD+l6qHY2FrYkHx7wJemXwF0IfgBwEflCERo4isZrNEd6BmtopANwE9sukWkGgBN7G5FiiJrSCAAAII/BZgnbRjTuf+OmnfbUukB+usrzXnODa6k8+EgDQgnnnioSmfugBduACH/acO9Z5+xAAAAABJRU5ErkJggg=="/>
-        </label>
-    </div>
     <div class="clearfix"></div>
-
     <hr>
-    <div class="col-xs-6 col-sm-6">
-        <address>
-            <p class="visible-print-block">
-                <i class="fa fa-map-marker"></i>
-                {{address}}
-                <br>
-                {{provincyState}}
-            </p>
-            <a class="hidden-print" href="{{urlMaps}}" target="_blank">
-                <i class="fa fa-map-marker" style="color: black"></i>
-                {{address}}
-                <br>
-                {{provincyState}}
+
+    <div class="row hidden-print">
+        <div class="col-xs-12 col-sm-6">
+            <address>
+                <p class="visible-print-block">
+                    <i class="fa fa-map-marker"></i>
+                    {{address}}
+                    <br>
+                    {{provincyState}}
+                </p>
+                <a class="hidden-print" href="{{urlMaps}}" target="_blank">
+                    <i class="fa fa-map-marker" style="color: black"></i>
+                    {{address}}
+                    <br>
+                    <div style="margin-left: 10px;">{{provincyState}}</div>
+                </a>
+                <div class="clearfix"></div>
+                <i class="fa fa-phone"></i> {{phone}}
+                <div class="clearfix"></div>
+                <a class="hidden-print" href="mailto:#"><i class="fa fa-envelope" style="color: black"></i>
+                    {{email}}</a>
+                <p class="visible-print-block"><i class="fa fa-envelope"></i> {{email}}</p>
+                <p><i class="fa fa-skype" aria-hidden="true"></i> {{skype}}</p>
+            </address>
+        </div>
+        <div class="col-xs-12 col-sm-6 text-center">
+            <a href="https://www.linkedin.com/in/khwesten" target="_blank">
+                <img height="50"
+                     src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDQzMC4xMTcgNDMwLjExNyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDMwLjExNyA0MzAuMTE3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggaWQ9IkxpbmtlZEluIiBkPSJNNDMwLjExNywyNjEuNTQzVjQyMC41NmgtOTIuMTg4VjI3Mi4xOTNjMC0zNy4yNzEtMTMuMzM0LTYyLjcwNy00Ni43MDMtNjIuNzA3ICAgYy0yNS40NzMsMC00MC42MzIsMTcuMTQyLTQ3LjMwMSwzMy43MjRjLTIuNDMyLDUuOTI4LTMuMDU4LDE0LjE3OS0zLjA1OCwyMi40NzdWNDIwLjU2aC05Mi4yMTljMCwwLDEuMjQyLTI1MS4yODUsMC0yNzcuMzJoOTIuMjEgICB2MzkuMzA5Yy0wLjE4NywwLjI5NC0wLjQzLDAuNjExLTAuNjA2LDAuODk2aDAuNjA2di0wLjg5NmMxMi4yNTEtMTguODY5LDM0LjEzLTQ1LjgyNCw4My4xMDItNDUuODI0ICAgQzM4NC42MzMsMTM2LjcyNCw0MzAuMTE3LDE3Ni4zNjEsNDMwLjExNywyNjEuNTQzeiBNNTIuMTgzLDkuNTU4QzIwLjYzNSw5LjU1OCwwLDMwLjI1MSwwLDU3LjQ2MyAgIGMwLDI2LjYxOSwyMC4wMzgsNDcuOTQsNTAuOTU5LDQ3Ljk0aDAuNjE2YzMyLjE1OSwwLDUyLjE1OS0yMS4zMTcsNTIuMTU5LTQ3Ljk0QzEwMy4xMjgsMzAuMjUxLDgzLjczNCw5LjU1OCw1Mi4xODMsOS41NTh6ICAgIE01LjQ3Nyw0MjAuNTZoOTIuMTg0di0yNzcuMzJINS40NzdWNDIwLjU2eiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="/>
             </a>
-            <div class="clearfix"></div>
-            <i class="fa fa-phone"></i> {{phone}}
-            <div class="clearfix"></div>
-            <a class="hidden-print" href="mailto:#"><i class="fa fa-envelope" style="color: black"></i> {{email}}</a>
-            <p class="visible-print-block"><i class="fa fa-envelope"></i> {{email}}</p>
-            <p><i class="fa fa-skype" aria-hidden="true"></i> {{skype}}</p>
-        </address>
+            <div class="clearfix visible-print-block" style="margin: 5px 0"></div>
+            <a href="https://github.com/Khwesten" target="_blank">
+                <img height="50"
+                     src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ3OC42MTMgNDc4LjYxMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDc4LjYxMyA0NzguNjEzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnIGlkPSJYTUxJRF8xMjJfIj4KCTxnPgoJCTxwYXRoIGQ9Ik00MjcuNTAxLDIwMC42OTVjMS43NzYtMTEuMjM4LDIuODg0LTIzLjU2LDMuMTYzLTM3LjM3N2MtMC4xMDctNTkuMjQ2LTI4LjQ2OC04MC4yMS0zMy45MjUtOTAuMDM4ICAgIGM4LjAzNy00NC44OS0xLjMzMS02NS4zMDktNS42ODgtNzIuMjk5Yy0xNi4wNy01LjcwNC01NS45MSwxNC43MjItNzcuNjc4LDI5LjEwMWMtMzUuNDkxLTEwLjM4OS0xMTAuNDk0LTkuMzc1LTEzOC42MjEsMi42ODkgICAgQzEyMi44NTYtNC4zODksOTUuNDA4LDEuMjc3LDk1LjQwOCwxLjI3N3MtMTcuNzQ1LDMxLjgyLTQuNjkxLDc4LjM3MWMtMTcuMDc1LDIxLjc1OS0yOS44MDIsMzcuMTQzLTI5LjgwMiw3Ny45NDkgICAgYzAsOS43NzMsMC42MDcsMTkuMDA4LDEuNjM3LDI3Ljg5M2MxNC43MDUsNzcuMzE4LDc1Ljk3LDExMC42NzQsMTM2LjE1LDExNi40MjZjLTkuMDU2LDYuODgxLTE5LjkyOCwxOS45MDMtMjEuNDMyLDM0Ljk5MiAgICBjLTExLjM3OSw3LjM1Ny0zNC4yNjgsOS43ODktNTIuMDY3LDQuMTkzYy0yNC45MzktNy44OC0zNC40ODYtNTcuMjY2LTcxLjgzMy01MC4yMjFjLTguMDgxLDEuNTEyLTYuNDc1LDYuODQyLDAuNTIzLDExLjM4NiAgICBjMTEuMzc4LDcuMzgsMjIuMDk0LDE2LjU1NCwzMC4zNTQsMzYuMTg1YzYuMzQ0LDE1LjA3MiwxOS42ODcsNDEuOTgyLDYxLjg3Myw0MS45ODJjMTYuNzQ3LDAsMjguNDc3LTEuOTc5LDI4LjQ3Ny0xLjk3OSAgICBzMC4zMTksMzguNDA2LDAuMzE5LDUzLjM4NWMwLDE3LjIzOC0yMy4yNjQsMjIuMDc4LTIzLjI2NCwzMC4zNDhjMCwzLjI4OSw3LjcsMy42MDEsMTMuODg4LDMuNjAxICAgIGMxMi4yMjksMCwzNy42NzMtMTAuMTg2LDM3LjY3My0yOC4xMDNjMC0xNC4yMzcsMC4yMjctNjIuMDgxLDAuMjI3LTcwLjQ2YzAtMTguMzA3LDkuODExLTI0LjEzNiw5LjgxMS0yNC4xMzYgICAgczEuMjAxLDk3LjcyNy0yLjM2MSwxMTAuODI5Yy00LjE3NywxNS40MDgtMTEuNzQ0LDEzLjIxOS0xMS43NDQsMjAuMDc2YzAsMTAuMjMzLDMwLjU4OSwyLjUwMiw0MC43MzUtMTkuODk3ICAgIGM3Ljg0OS0xNy40OTUsNC4zMzQtMTEzLjMzMSw0LjMzNC0xMTMuMzMxbDguMTgzLTAuMTc4YzAsMCwwLjA5NCw0My44OTItMC4xODgsNjMuOTQ0Yy0wLjI5NSwyMC43NjktMi40MzgsNDcuMDI1LDkuODk4LDU5LjQxNyAgICBjOC4wOTcsOC4xNSwzMi45MDMsMjIuNDUxLDMyLjkwMyw5LjM4MmMwLTcuNTc0LTE3LjM3MS0xMy44MzMtMTcuMzcxLTM0LjM1M1YzNDQuNDVjMTAuNTUzLDAsMTIuNzM0LDMxLjA3MiwxMi43MzQsMzEuMDcyICAgIGwzLjgwNCw1Ny43MjdjMCwwLTIuNTI2LDIxLjA2NSwyMi43NTYsMjkuODU2YzguOTI1LDMuMTI2LDI4LjAxOCwzLjk3NiwyOC45MTMtMS4yNzFjMC44OTctNS4yNi0yMi45OS0xMy4wMzgtMjMuMjE3LTI5LjM0MiAgICBjLTAuMTIzLTkuOTMsMC40NDUtMTUuNzQyLDAuNDQ1LTU4LjkzNGMwLTQzLjE2OC01Ljc5OS01OS4xMzctMjYuMDA3LTcxLjg2M0MzNTUuNjY5LDI5NS42ODEsNDE2LjUzNiwyNjkuNTEsNDI3LjUwMSwyMDAuNjk1eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="/>
+            </a>
+        </div>
     </div>
-    <div class="col-xs-6 col-sm-6">
-        <a href="https://www.linkedin.com/in/khwesten" target="_blank">
-            <img height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABFFBMVEUABQYAhLH///8AAAAAX38APlMDBQYAgKu/v79/f38AQlg5PD0JISkARl4oKy2Hh4cAHCYAW3kIHSMBAQKvr683OjwFCAoAgq4AfKYAeKDg8Pb19fUASWIARFwAHScNEBEAcpgCNEQeIiMHGR8GDxL5+fng4OCkpKQAaIsAUm4BLz4FKjb9/f3W1tbS0tLFxcUAdp6ampoAZYgAYYIAXHxpamoATWcAS2VcXV1MTk4cHiAVFxju7u7n5+e7u7u0tLSsrKwAfaiWlpYAbJJ1dnZwcHAAT2sCO08CLTwCJjIGJS8GFRoTFhft7e28yc6KlJeFjpKQkJAAa5B3gIN9fX0AV3VUVlYAOk47P0EwMzQJISoiJygvjTMkAAAAAXRSTlPVtl/+PQAAAedJREFUWMPtl+dy4jAQgLHWiCR3gSMCl8PEuNBD75BeL+V6T97/PRJhjZPAkIykPzCT75d3JX/WWNLObCQCUjy8n1UlyEIEVEUCdZkFeuXDPJcGHepsUyr6Kysob8xj6XSkOX0uL+c/MLv9jiEuOHIAjwm2RAXGtbufR5mW/UlQ4LgZRKlpZSFBDhooIOELCX7biFEHU0SQjSNGBtoigq62wwQNMEQEJjlkgp4ntgsbdgFRDogqJtCv7FYhXz8jF8JH2dKAwHVX5jLlOs2lqUgzmMlo9dI5/6G/IDAdDVP86DT8ixkPd6vkAU73zkYTwBexhYKoXUxREoSmdLKemtKC5gD39oOLtleceKVFgttfKCBNlxCDtSAqwDY5RiG7Q9JfIHi/jgLezQi0FHrKMT7hEuxODtFzRls6jwDl0Qx7dpZLME/C4xXUvw9Pi5kwXCNHXIL8KfEqV5rbCCsOaXMJhj6dYzi4hhh3Fo/ggLCjU/2/E54UHsGfSli3a0ICd6Aw/CJL/eMS4KTC2Eqw1BdDUvBRWXnBt7akIB1decFPVVn1bZQWfC0pS7mN1VFQcD6PLTFBEtw45UYzaeiP4wFwEn7ihqW0/pyAkrM2KedGEG0yHieYA5Yqx1ahZ3oTcAhkm2/p9v8eGypMRLSNgcoAAAAASUVORK5CYII=" />
-        </a>
-        <div class="clearfix visible-print-block" style="margin: 5px 0"></div>
-        <a href="https://github.com/Khwesten" target="_blank">
-            <img height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAn1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC3kz5EAAAANHRSTlMAuPz3nuLOqzQb7d7EpCggFxTnsoyIgkssCNW8l3puZ1s+OiQdDAYD2beRX1ARAvHkf1ZG1cxR6wAAAcRJREFUWMPt19duwkAQheETGxdcMc02vZdQAmTf/9mCaKHMmEHORRTlv0PCn+xlNV5gN1SOGjZ8lSsfb/mAt3/gTwLai8D8FjDSNC44ik23lsGknnEHdeybxiZzeTXCvjAD2OHQemEcHsdtFradd8s83pMf4liZBxKcSuPeoLjGuXES9wKcq7CANoGkel6gxT9CIAIqPBCLAJMHOiKgzAMDEdBkgQJE9Tlgs4KsCgMsICzQSEAfQ1qLBCyI65PAQg6kGgX0Ic+kgCHkFShgDHktCihB3jsFBHmBAeRVKKALeQYF+BAXKQow5MCOBFQoXwIaqEFYSaMBvSgE2jknUqhzgGaLgDk/VMtD0YuJB9QmwZOmrewDht6eIivbUzRgeueVcetD/nKLO+I01ojalzeO1yV+0Oiz6mackawJEF19wWn2braO5T47ZHkrIHCuFmNIzjAeULMS0P/eIm3cNNZZ4GYf9i6fRtwY5QEtAdB1Tk+Eu7rPAdXEvlXNc8tWJ7oHlgJALcFnSwCjyAMjCaCMhB8iIkBp/iDNARyNmTkznIfxVuQBsurvA0YvArUfB0IO8BXZ9mEWftAA8/ffDHFfhxTmX3QKzg+QnD6qAAAAAElFTkSuQmCC" />
-        </a>
+    <div class="row visible-print">
+        <div class="col-xs-6 col-sm-6">
+            <address>
+                <p class="visible-print-block">
+                    <i class="fa fa-map-marker"></i>
+                    {{address}}
+                    <br>
+                    {{provincyState}}
+                </p>
+                <a class="hidden-print" href="{{urlMaps}}" target="_blank">
+                    <i class="fa fa-map-marker" style="color: black"></i>
+                    {{address}}
+                    <br>
+                    <div style="margin-left: 10px;">{{provincyState}}</div>
+                </a>
+                <div class="clearfix"></div>
+                <i class="fa fa-phone"></i> {{phone}}
+                <div class="clearfix"></div>
+                <a class="hidden-print" href="mailto:#"><i class="fa fa-envelope" style="color: black"></i>
+                    {{email}}</a>
+                <p class="visible-print-block"><i class="fa fa-envelope"></i> {{email}}</p>
+                <p><i class="fa fa-skype" aria-hidden="true"></i> {{skype}}</p>
+            </address>
+        </div>
+        <div class="col-xs-6 col-sm-6 text-center">
+            <a href="https://www.linkedin.com/in/khwesten" target="_blank">
+                <img height="50"
+                     src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDQzMC4xMTcgNDMwLjExNyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDMwLjExNyA0MzAuMTE3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggaWQ9IkxpbmtlZEluIiBkPSJNNDMwLjExNywyNjEuNTQzVjQyMC41NmgtOTIuMTg4VjI3Mi4xOTNjMC0zNy4yNzEtMTMuMzM0LTYyLjcwNy00Ni43MDMtNjIuNzA3ICAgYy0yNS40NzMsMC00MC42MzIsMTcuMTQyLTQ3LjMwMSwzMy43MjRjLTIuNDMyLDUuOTI4LTMuMDU4LDE0LjE3OS0zLjA1OCwyMi40NzdWNDIwLjU2aC05Mi4yMTljMCwwLDEuMjQyLTI1MS4yODUsMC0yNzcuMzJoOTIuMjEgICB2MzkuMzA5Yy0wLjE4NywwLjI5NC0wLjQzLDAuNjExLTAuNjA2LDAuODk2aDAuNjA2di0wLjg5NmMxMi4yNTEtMTguODY5LDM0LjEzLTQ1LjgyNCw4My4xMDItNDUuODI0ICAgQzM4NC42MzMsMTM2LjcyNCw0MzAuMTE3LDE3Ni4zNjEsNDMwLjExNywyNjEuNTQzeiBNNTIuMTgzLDkuNTU4QzIwLjYzNSw5LjU1OCwwLDMwLjI1MSwwLDU3LjQ2MyAgIGMwLDI2LjYxOSwyMC4wMzgsNDcuOTQsNTAuOTU5LDQ3Ljk0aDAuNjE2YzMyLjE1OSwwLDUyLjE1OS0yMS4zMTcsNTIuMTU5LTQ3Ljk0QzEwMy4xMjgsMzAuMjUxLDgzLjczNCw5LjU1OCw1Mi4xODMsOS41NTh6ICAgIE01LjQ3Nyw0MjAuNTZoOTIuMTg0di0yNzcuMzJINS40NzdWNDIwLjU2eiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="/>
+            </a>
+            <div class="clearfix visible-print-block" style="margin: 5px 0"></div>
+            <a href="https://github.com/Khwesten" target="_blank">
+                <img height="50"
+                     src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ3OC42MTMgNDc4LjYxMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDc4LjYxMyA0NzguNjEzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnIGlkPSJYTUxJRF8xMjJfIj4KCTxnPgoJCTxwYXRoIGQ9Ik00MjcuNTAxLDIwMC42OTVjMS43NzYtMTEuMjM4LDIuODg0LTIzLjU2LDMuMTYzLTM3LjM3N2MtMC4xMDctNTkuMjQ2LTI4LjQ2OC04MC4yMS0zMy45MjUtOTAuMDM4ICAgIGM4LjAzNy00NC44OS0xLjMzMS02NS4zMDktNS42ODgtNzIuMjk5Yy0xNi4wNy01LjcwNC01NS45MSwxNC43MjItNzcuNjc4LDI5LjEwMWMtMzUuNDkxLTEwLjM4OS0xMTAuNDk0LTkuMzc1LTEzOC42MjEsMi42ODkgICAgQzEyMi44NTYtNC4zODksOTUuNDA4LDEuMjc3LDk1LjQwOCwxLjI3N3MtMTcuNzQ1LDMxLjgyLTQuNjkxLDc4LjM3MWMtMTcuMDc1LDIxLjc1OS0yOS44MDIsMzcuMTQzLTI5LjgwMiw3Ny45NDkgICAgYzAsOS43NzMsMC42MDcsMTkuMDA4LDEuNjM3LDI3Ljg5M2MxNC43MDUsNzcuMzE4LDc1Ljk3LDExMC42NzQsMTM2LjE1LDExNi40MjZjLTkuMDU2LDYuODgxLTE5LjkyOCwxOS45MDMtMjEuNDMyLDM0Ljk5MiAgICBjLTExLjM3OSw3LjM1Ny0zNC4yNjgsOS43ODktNTIuMDY3LDQuMTkzYy0yNC45MzktNy44OC0zNC40ODYtNTcuMjY2LTcxLjgzMy01MC4yMjFjLTguMDgxLDEuNTEyLTYuNDc1LDYuODQyLDAuNTIzLDExLjM4NiAgICBjMTEuMzc4LDcuMzgsMjIuMDk0LDE2LjU1NCwzMC4zNTQsMzYuMTg1YzYuMzQ0LDE1LjA3MiwxOS42ODcsNDEuOTgyLDYxLjg3Myw0MS45ODJjMTYuNzQ3LDAsMjguNDc3LTEuOTc5LDI4LjQ3Ny0xLjk3OSAgICBzMC4zMTksMzguNDA2LDAuMzE5LDUzLjM4NWMwLDE3LjIzOC0yMy4yNjQsMjIuMDc4LTIzLjI2NCwzMC4zNDhjMCwzLjI4OSw3LjcsMy42MDEsMTMuODg4LDMuNjAxICAgIGMxMi4yMjksMCwzNy42NzMtMTAuMTg2LDM3LjY3My0yOC4xMDNjMC0xNC4yMzcsMC4yMjctNjIuMDgxLDAuMjI3LTcwLjQ2YzAtMTguMzA3LDkuODExLTI0LjEzNiw5LjgxMS0yNC4xMzYgICAgczEuMjAxLDk3LjcyNy0yLjM2MSwxMTAuODI5Yy00LjE3NywxNS40MDgtMTEuNzQ0LDEzLjIxOS0xMS43NDQsMjAuMDc2YzAsMTAuMjMzLDMwLjU4OSwyLjUwMiw0MC43MzUtMTkuODk3ICAgIGM3Ljg0OS0xNy40OTUsNC4zMzQtMTEzLjMzMSw0LjMzNC0xMTMuMzMxbDguMTgzLTAuMTc4YzAsMCwwLjA5NCw0My44OTItMC4xODgsNjMuOTQ0Yy0wLjI5NSwyMC43NjktMi40MzgsNDcuMDI1LDkuODk4LDU5LjQxNyAgICBjOC4wOTcsOC4xNSwzMi45MDMsMjIuNDUxLDMyLjkwMyw5LjM4MmMwLTcuNTc0LTE3LjM3MS0xMy44MzMtMTcuMzcxLTM0LjM1M1YzNDQuNDVjMTAuNTUzLDAsMTIuNzM0LDMxLjA3MiwxMi43MzQsMzEuMDcyICAgIGwzLjgwNCw1Ny43MjdjMCwwLTIuNTI2LDIxLjA2NSwyMi43NTYsMjkuODU2YzguOTI1LDMuMTI2LDI4LjAxOCwzLjk3NiwyOC45MTMtMS4yNzFjMC44OTctNS4yNi0yMi45OS0xMy4wMzgtMjMuMjE3LTI5LjM0MiAgICBjLTAuMTIzLTkuOTMsMC40NDUtMTUuNzQyLDAuNDQ1LTU4LjkzNGMwLTQzLjE2OC01Ljc5OS01OS4xMzctMjYuMDA3LTcxLjg2M0MzNTUuNjY5LDI5NS42ODEsNDE2LjUzNiwyNjkuNTEsNDI3LjUwMSwyMDAuNjk1eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="/>
+            </a>
+        </div>
     </div>
+
     <div class="clearfix"></div>
     <hr style="margin-top: 10px">
     <div class="clearfix"></div>
-    <p ng-bind-html="main.description">{{main.description}}</p>
-    <hr>
 
-    <h3><i class="fa fa-book"></i> {{main.menuKnowledge}}</h3>
-
-    <small><i>*{{main.phrase}}</i></small>
-    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-
-    <h3><i class="fa fa-users"></i> {{main.menuExperience}}</h3>
-
-    <div ng-repeat="job in main.jobs track by $index" class="col-lg-4 col-sm-6 col-xs-6" data-toggle="tooltip"
-         data-placement="top" title="{{job.tools}}">
-        <div class="col-lg-12 col-xs-12 box-exp">
-            <h4>{{job.company}}</h4>
-            <small>{{job.date}}</small>
-            <h4>{{job.position}}</h4>
-            <small>{{job.locate}}</small>
-            <div class="clearfix"></div>
-            <p class="visible-print-inline-block visible-xs-inline-block">{{job.tools}}</p>
+    <div class="row">
+        <div class="col-lg-12">
+            <p ng-bind-html="main.description">{{main.description}}</p>
         </div>
-        <!--<div ng-show="(($index + 1) % 3 === 0)" class="hidden-sm clearfix"></div>-->
-        <!--<div ng-show="(($index + 1) % 2 === 0)" class="hidden-lg hidden-md col-xs-12 clearfix"-->
-             <!--style="clear: both; margin-bottom: 20px"></div>-->
     </div>
 
-    <div class="clearfix page-break"></div>
+    <hr>
 
-    <h3><i class="fa fa-folder-open"></i> {{main.menuFreelance}}</h3>
+    <!--<small><i>*{{main.phrase}}</i></small>-->
+    <!--<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>-->
+    <div class="row">
+        <div class="container text-center">
+            <h3 class="title text-left"><i class="fa fa-book"></i> {{main.menuKnowledge}}</h3>
 
-    <div ng-repeat="freelance in main.freelances">
-        <blockquote>
-            <h4><strong>
-                <a ng-href="{{freelance.url}}" target="_blank">
-                    {{freelance.name}}
-                </a>
-            </strong>
-                {{freelance.date}}
-            </h4>
-            <p>
-                {{freelance.description}}
-            </p>
-        </blockquote>
-        <div class="clearfix"></div>
+            <div class="col-lg-4">
+                <h4>0-1 {{main.yearSing}}</h4>
+                <div ng-repeat="xp in xp.study" class="back-tech">
+                    <img class="media-objects" ng-src="imgs64/{{xp.tech}}-logo.png"/>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h4>1-3 {{main.yearPlural}}</h4>
+                <div ng-repeat="xp in xp.intermediate" class="back-tech">
+                    <img class="media-objects" ng-src="imgs64/{{xp.tech}}-logo.png">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h4>3+ {{main.yearPlural}}</h4>
+                <div ng-repeat="xp in xp.advanced" class="back-tech">
+                    <img class="media-objects" ng-src="imgs64/{{xp.tech}}-logo.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <h3 class="title text-left col-lg-12"><i class="fa fa-users"></i> {{main.menuExperience}}</h3>
+
+        <div ng-repeat="job in main.jobs track by $index" class="col-lg-4 col-sm-6 col-xs-12 hidden-print"
+             data-toggle="tooltip"
+             data-placement="top" title="{{job.tools}}">
+            <div class="col-lg-12 col-xs-12 box-exp">
+                <h4>{{job.company}}</h4>
+                <small>{{job.date}}</small>
+                <h4>{{job.position}}</h4>
+                <small>{{job.locate}}</small>
+                <div class="clearfix"></div>
+                <p class="visible-print-inline-block visible-xs-inline-block">{{job.tools}}</p>
+            </div>
+        </div>
+        <div ng-repeat="job in main.jobs track by $index" class="col-lg-4 col-sm-6 col-xs-6 visible-print"
+             data-toggle="tooltip"
+             data-placement="top" title="{{job.tools}}">
+            <div class="col-lg-12 col-xs-12 box-exp">
+                <h4>{{job.company}}</h4>
+                <small>{{job.date}}</small>
+                <h4>{{job.position}}</h4>
+                <small>{{job.locate}}</small>
+                <div class="clearfix"></div>
+                <p class="visible-print-inline-block visible-xs-inline-block">{{job.tools}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="title text-left"><i class="fa fa-folder-open"></i> {{main.menuFreelance}}</h3>
+
+            <div ng-repeat="freelance in main.freelances">
+                <blockquote>
+                    <h4><strong>
+                        <a ng-href="{{freelance.url}}" target="_blank">
+                            {{freelance.name}}
+                        </a>
+                    </strong>
+                        {{freelance.date}}
+                    </h4>
+                    <p>
+                        {{freelance.description}}
+                    </p>
+                </blockquote>
+                <div class="clearfix"></div>
+            </div>
+        </div>
     </div>
 </div>
 
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="lib/highcharts/highcharts.js"></script>
-<script src="lib/bootsrap/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 <script src="js/global.js"></script>
 
 </body>

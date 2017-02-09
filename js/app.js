@@ -14,6 +14,8 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
     $scope.language = [
         {
             phrase: "O 10 nunca será alcançado, pois assim como o homem, a tecnologia está em constante evolução.",
+            subtitle: 'Sou um codificador limpo e faço códigos incríveis!!!',
+            myName: "Meu nome é",
             menuKnowledge: "Conhecimento",
             menuFreelance: "Freelances",
             menuExperience: "Experiência",
@@ -21,6 +23,9 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             " Tecnológicas (FACET) do Centro de Estudos Superiores de Maceió (CESMAC). <br>" +
             "<strong>Pós-graduado</strong> em Engenharia de software também pela FACET/CESMAC.",
             situation: "Brasileiro, solteiro - 25 anos",
+            printable: "ESSE CV É IMPRIMÍVEL",
+            yearSing: 'ANO',
+            yearPlural: 'ANOS',
             jobs: [
                 {
                     tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
@@ -142,6 +147,8 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
         },
         {
             phrase: "The 10 will never be reached, as well as man, the technology is constantly evolving.",
+            subtitle: "I'm a clean coder and do aewsome codes!!!",
+            myName: "My name is",
             menuKnowledge: "Knowledge",
             menuFreelance: "Freelances",
             menuExperience: "Experiences",
@@ -150,6 +157,9 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             "<strong>Post-degree</strong> in Software Engineering from Faculdade" +
             " de Ciências Exatas e Tecnológias (FACET) of Centro de Estudos Superiores de Maceió (CESMAC).",
             situation: "Brazilian, single - 25 years",
+            printable: "THIS CV IS PRINTABLE",
+            yearSing: 'YEAR',
+            yearPlural: 'YEARS',
             jobs: [
                 {
                     tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
@@ -271,6 +281,8 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
         },
         {
             phrase: "El 10 nunca se alcanzará, al igual que el hombre, la tecnología está en constante evolución.",
+            subtitle: "¡¡¡Soy un codificador limpio y hago códigos impresionantes!!!",
+            myName: "Mi nombre es",
             menuKnowledge: "Conocimiento",
             menuFreelance: "Freelances",
             menuExperience: "Experiencia",
@@ -278,6 +290,9 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             " Tecnológicas (FACET) del Centro de Estudios Superiores de Maceió (CESMAC). <br>" +
             "<strong>Postgrado</strong> en ingeniería de software también por FACET/CESMAC.",
             situation: "Brasileño, solo - 25 años",
+            printable: 'ESTE CV ES IMPRIMIBLE',
+            yearSing: 'AÑO',
+            yearPlural: 'AÑOS',
             jobs: [
                 {
                     tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
@@ -398,6 +413,31 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             ]
         }
     ];
+
+    $scope.xp = {
+        study:[
+            {tech: 'csharp', desc: ''},
+            {tech: 'python', desc: ''},
+            {tech: 'android', desc: ''},
+            {tech: 'blender', desc: ''}
+        ],
+        intermediate: [
+            {tech: 'nodejs', desc: ''},
+            {tech: 'angular', desc: ''},
+            {tech: 'knockoutjs', desc: ''},
+            {tech: 'mongodb', desc: ''},
+            {tech: 'dynamodb', desc: ''},
+            {tech: 'ionic', desc: ''}
+        ],
+        advanced: [
+            {tech: 'php', desc: ''},
+            {tech: 'java', desc: ''},
+            {tech: 'mysql', desc: ''},
+            {tech: 'html5', desc: ''},
+            {tech: 'css3', desc: ''},
+            {tech: 'js', desc: ''}
+        ]
+    };
 
     $scope.main = $scope.language[0];
 });
