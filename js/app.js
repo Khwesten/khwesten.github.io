@@ -11,10 +11,15 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
     $scope.provincyState = "Tabuleiro do Martins - Maceió / AL";
     $scope.urlMaps = "https://www.google.com.br/maps/place/Tabuleiro+do+Martins,+Macei%C3%B3+-+AL,+57061-410/@-9.5934739,-35.7692318,15z/data=!3m1!4b1!4m2!3m1!1s0x70148940e6771d9:0x3f32b2a34da75b70";
 
+    var decreasYears = (new Date().getMonth() + 1 >= 7) ? 0 : 1;
+    var currentYear = new Date().getFullYear();
+    var yearsOld = currentYear - 1990 - decreasYears;
+
     $scope.language = [
         {
             phrase: "O 10 nunca será alcançado, pois assim como o homem, a tecnologia está em constante evolução.",
-            subtitle: 'Sou um codificador limpo e faço códigos incríveis!!!',
+            subtitle: 'Desenvolvedor desde 2010 atuando com PHP desde o início e expandindo para outras linguagens' +
+            ' posteriormente. Sou um dev MONSTRO, louco por desafios, codificador limpo e gamer da pesada.',
             myName: "Meu nome é",
             menuKnowledge: "Conhecimento",
             menuFreelance: "Freelances",
@@ -22,7 +27,7 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             description: "<strong>Graduado</strong> em análise de sistemas pela Faculdade de Ciências Exatas e" +
             " Tecnológicas (FACET) do Centro de Estudos Superiores de Maceió (CESMAC). <br>" +
             "<strong>Pós-graduado</strong> em Engenharia de software também pela FACET/CESMAC.",
-            situation: "Brasileiro, solteiro - 25 anos",
+            situation: "Brasileiro, solteiro - " + yearsOld + " anos",
             printable: "ESSE CV É IMPRIMÍVEL",
             yearSing: 'ANO',
             yearPlural: 'ANOS',
@@ -147,7 +152,7 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
         },
         {
             phrase: "The 10 will never be reached, as well as man, the technology is constantly evolving.",
-            subtitle: "I'm a clean coder and do aewsome codes!!!",
+            subtitle: "Developer since 2010 working with PHP from beginning and expanding to other languages until the end. I'm a dev MONSTER, crazy for challenges, clean coder and heavy gamer.",
             myName: "My name is",
             menuKnowledge: "Knowledge",
             menuFreelance: "Freelances",
@@ -156,7 +161,7 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             " of Centro de Estudos Superiores de Maceió (CESMAC). <br> " +
             "<strong>Post-degree</strong> in Software Engineering from Faculdade" +
             " de Ciências Exatas e Tecnológias (FACET) of Centro de Estudos Superiores de Maceió (CESMAC).",
-            situation: "Brazilian, single - 25 years",
+            situation: "Brazilian, single - " + yearsOld + " years",
             printable: "THIS CV IS PRINTABLE",
             yearSing: 'YEAR',
             yearPlural: 'YEARS',
@@ -281,7 +286,8 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
         },
         {
             phrase: "El 10 nunca se alcanzará, al igual que el hombre, la tecnología está en constante evolución.",
-            subtitle: "¡¡¡Soy un codificador limpio y hago códigos impresionantes!!!",
+            subtitle: "Desarrollador que trabaja desde 2010 con PHP desde el principio y expandirse a otros idiomas" +
+            " más adelante. Soy un MONSTRUOS dev, loco, sobre los retos codificador limpia y pesada jugador.",
             myName: "Mi nombre es",
             menuKnowledge: "Conocimiento",
             menuFreelance: "Freelances",
@@ -289,7 +295,7 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             description: "<strong>Licenciatura</strong> en Análisis de Sistemas en la Facultad de Ciencias Exactas y" +
             " Tecnológicas (FACET) del Centro de Estudios Superiores de Maceió (CESMAC). <br>" +
             "<strong>Postgrado</strong> en ingeniería de software también por FACET/CESMAC.",
-            situation: "Brasileño, solo - 25 años",
+            situation: "Brasileño, solo - " + yearsOld + " años",
             printable: 'ESTE CV ES IMPRIMIBLE',
             yearSing: 'AÑO',
             yearPlural: 'AÑOS',
