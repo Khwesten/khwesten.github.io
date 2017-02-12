@@ -4,6 +4,10 @@
 var mainApp = angular.module('mainApp', ['ngSanitize']);
 
 mainApp.controller('MainController', function MainController($scope, $sce) {
+    var array = location.search.split('?');
+    var lastPositionOfArray = array.length-1;
+    var lang = array[lastPositionOfArray].split('=')[1];
+
     $scope.phone = "+55 (082) 9.9316-7395";
     $scope.email = "k-heiner@hotmail.com";
     $scope.skype = "khwesten.heiner";
@@ -425,7 +429,8 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             {tech: 'csharp', desc: ''},
             {tech: 'python', desc: ''},
             {tech: 'android', desc: ''},
-            {tech: 'blender', desc: ''}
+            {tech: 'blender', desc: ''},
+            {tech: 'unity', desc: ''}
         ],
         intermediate: [
             {tech: 'nodejs', desc: ''},
@@ -445,5 +450,19 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
         ]
     };
 
-    $scope.main = $scope.language[0];
+    var position;
+
+    switch (lang) {
+        case 'es':
+            position = 2;
+            break;
+        case 'en':
+            position = 1;
+            break;
+        default:
+            position = 0;
+            break;
+    }
+
+    $scope.main = $scope.language[position];
 });
