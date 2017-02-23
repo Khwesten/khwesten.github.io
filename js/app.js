@@ -37,18 +37,18 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             yearPlural: 'ANOS',
             jobs: [
                 {
-                    tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
-                    company: "Palmasite",
-                    date: "Atual (desde 12/16)",
-                    position: "Programador Full-Stack Sr. (remoto)",
-                    locate: "Maceió/AL - TO"
-                },
-                {
                     tools: "HTML5, CSS3, JS, PHP e MySql",
                     company: "TECK S",
                     date: "Atual (desde 07/16)",
                     position: "Eng. de software Full-Stack (remoto)",
                     locate: "Maceió/AL - João Pessoa/PB"
+                },
+                {
+                    tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
+                    company: "Palmasite",
+                    date: "2016-2017",
+                    position: "Programador Full-Stack Sr. (remoto)",
+                    locate: "Maceió/AL - TO"
                 },
                 {
                     tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
@@ -171,18 +171,18 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             yearPlural: 'YEARS',
             jobs: [
                 {
-                    tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
-                    company: "Palmasite",
-                    date: "Current (since 12/16)",
-                    position: "Full-Stack Sr. Developer (remote)",
-                    locate: "Maceió/AL - TO"
-                },
-                {
                     tools: "HTML5, CSS3, JS, PHP e MySql",
                     company: "TECK S",
                     date: "Current (since 07/16)",
                     position: "Full-Stack software engineer (remote)",
                     locate: "Maceió/AL - João Pessoa/PB"
+                },
+                {
+                    tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
+                    company: "Palmasite",
+                    date: "2016-2017",
+                    position: "Full-Stack Sr. Developer (remote)",
+                    locate: "Maceió/AL - TO"
                 },
                 {
                     tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
@@ -305,18 +305,18 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
             yearPlural: 'AÑOS',
             jobs: [
                 {
-                    tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
-                    company: "Palmasite",
-                    date: "Actual (de 12/16)",
-                    position: "Programador Full-Stack Sr.(remoto)",
-                    locate: "Maceió/AL - TO"
-                },
-                {
                     tools: "HTML5, CSS3, JS, PHP e MySql",
                     company: "TECK S",
                     date: "Actual (de 07/16)",
                     position: "Ingeniero de software Full-Stack (remoto)",
                     locate: "Maceió/AL - João Pessoa/PB"
+                },
+                {
+                    tools: "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
+                    company: "Palmasite",
+                    date: "2016-2017",
+                    position: "Programador Full-Stack Sr.(remoto)",
+                    locate: "Maceió/AL - TO"
                 },
                 {
                     tools: "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
