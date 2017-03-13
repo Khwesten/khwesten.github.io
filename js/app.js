@@ -1,12 +1,23 @@
 /**
  * Created by NoteSamsung on 25/06/2016.
  */
-var mainApp = angular.module('mainApp', ['ngSanitize']);
+var mainApp = angular.module('mainApp', ['ngSanitize', 'ngRoute']);
 
-mainApp.controller('MainController', function MainController($scope, $sce) {
-    var array = location.search.split('?');
-    var lastPositionOfArray = array.length-1;
-    var lang = array[lastPositionOfArray].split('=')[1];
+mainApp.config(function ($routeProvider) {
+    $routeProvider
+        .when("/:language", {
+            templateUrl: "./templates/main.html",
+            controller: 'MainController'
+        })
+        .otherwise("/pt", {
+            templateUrl: 'index.html',
+            controller: 'MainController'
+        });
+});
+
+mainApp.controller('MainController', function MainController($scope, $sce, $routeParams) {
+
+    $scope.lang = $routeParams.language;
 
     $scope.phone = "+55 (082) 9.9316-7395";
     $scope.email = "k-heiner@hotmail.com";
@@ -425,7 +436,7 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
     ];
 
     $scope.xp = {
-        study:[
+        study: [
             {tech: 'csharp', desc: ''},
             {tech: 'python', desc: ''},
             {tech: 'android', desc: ''},
@@ -452,7 +463,7 @@ mainApp.controller('MainController', function MainController($scope, $sce) {
 
     var position;
 
-    switch (lang) {
+    switch ($scope.lang) {
         case 'es':
             position = 2;
             break;

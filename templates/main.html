@@ -1,0 +1,202 @@
+<div class="printable-notice">{{main.printable}}</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-xs-12">
+            <div class="col-xs-12 col-sm-3 hidden-print" style="padding: 0">
+                <img src="imgs/me.jpg" class="img img-responsive my-photo" height="100px">
+            </div>
+            <div class="col-xs-12 col-sm-9" style="text-transform: uppercase">
+                <h2 class="name">KHWESTEN HEINER</h2>
+                <h4 style="text-transform: none">{{main.subtitle}}</h4>
+                <h5>{{main.situation}}</h5>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12 hidden-print" style="text-align: center; padding-top: 40px">
+            <label class="language">
+                <a href="#pt"  ng-class="{'checked': lang == 'pt'}">
+                    <img height="50"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABWVBMVEUAAAAAAAAXVikAAAACAwAAAQACAgCEdAAzLQDfxQATEAABAQAVUSYBBgIKCQAGFgqlkQDYvAAFESzqzgAdczYdcDW+pwALKGsDDwdQRgAJIxEhgz4OMoX///8gfDseeTrVugAddjfOtQAbbDMYYi6slwAXXSyPfgASRiEPOBsDDAYONBlbTwAiHgApJQACCRkAAAAhgT02W6w+Ya+1nwCjjwAJIFSAl8p5awAQQB5vYQADBQoKKBI9NQADDSAuKADGrQD9/v6LoM95aQDp7fbG0OcKKBTHx8crLTIlTKTixwAOM4VFZbC2oADS0A+ynQH4+vybiQBzi8QiN2omkkZ0ZwFyZAAihD+WqNJgUwC2xOAKKBICCBU/NwA9NgDi5vMJIRAAAAAAAAAAAAAlkkUAAAD/4AAQO5sjiUH///8kjkP73AD93gD22ADv0gD42gAZQ58POZU1lD4fDkv1AAAAZHRSTlMAsO377vfx6N/95PXt6eng8fzg/vr59/Pi4N/+/fz8/Pz7+vf08/Ls5+Pj4uLg395k/fv69fHw6ufm5eLf393d+fDo5uHf3djH/v38+fb09O/u7Ojn5uXk4uLg4N/f3trRroc8tXqiJQAAAlZJREFUWMPtltlT4kAQh5FJwhUU8EBAEEU8ERBUVBTvY+/7vnf5TRIu3f3/H3aGRcbaXRGSF63ie0tN5avp6Z7usfXpczvIDjC+22w/vg2YIWsj4Lx5+RWmIDZAtdtHy2XdbgIVYAK9bBr9DghiJycxCwJ9gQBkQTcrsEuA0wlIdlOC0XHAvUrpqhsYH+1ZENkGFEeVMqoOBdiO9CSozHtAQsO0xXCIwDNf6V4w4wWWpynD5fO5KGN6GfDOdCmYHAIG19hffqcEhuT0s4+1QWBosguBvkQgb9UprTlkgHzMKIDsqFFa35JBlvSbBKoC7PBd13aBQPCnpmkTAWC3xuPZARS1oyCxCLjHKMcBrGstghIclDPmBhYT1wpWwoA0V6Ucv0xe5PL5i5YBsp9yqnMSEF75r6CyyWJMNegfnDgzGNEvb/PcEICztdBIEciblX8Fs14gHaeXSDg1nh7tc8f7e+wcILWX4mnAO/uXYIqnLknbuFDM8e3nnh9Hjf2CpilwidUkT+nUVcEIgWfjnAp8KGktHh4ZxoGWgY8Kzjc8ICOdBRmtTSFqFEpIUkH9kAs6h6BoggPDKGJYrMZFCB0OcUITHJ/CTQWv2CHenMaAJrg4Q+gyjYdPHv9KVLooJASFYB0Yo5waK6TxbktZCl75/50o5ZEeLlPzHB4EgDRP0f1PgKT2dp2VTKkIIMXiqr9uXmcTDYV83uOV0WwoJlras72GaGkWm6qltv4hYnqwPDIxWKyONuvDVRALh2N3/IXSlUC1m0ZlAgJLEPbUtUTW1qfPreA32LORcMzvoqkAAAAASUVORK5CYII="/>
+                </a>
+            </label>
+            <label class="language">
+                <a href="#en" ng-class="{'checked': lang == 'en'}">
+                    <img height="50"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABBVBMVEUAAAAAAAAAAAAEAAGNEh+amppWCxPR0dFVVVUiBQgNL3oDCx4CCBZVf9woXdLu7u5RfNtchN0sYNQwY9U9bddmjN9hh941ZtZJdtlNedqnFiRtkOB0luKyxe/V3/e+z/HF1PREcti3yfC7y/HL2PUAAACDERyZs+uiueyovu1PChHb5PjAwMClpaWJiYlKSkr8/Pz5ub+LqOcTAgRfDBWrwO4fBQc6CA3P2/V8fHz4+PiXFCEMK3Hn5+d2DxkBAwnwPlEDChvS0tKzNUFXHiQYFRYrKytiYmJTU1MAAADtHzQWT87////XHC8VSsEbU88lWtIdVdDeHTEhV9AaUc/KGizoHjM3Sf/5AAAASXRSTlMAsPju7cni3sDg7eDg9v7x9/T+/fvx8/z5+Pbv7uDf39764N/eZOzk4+Li4NXMxcD86efk4+Lh4N/C+PXs6+jn4+He2M7OxcC/7rr6ZQAAAhJJREFUWMPtlltX2lAQhWmwxLYmQoJCaonhoq1CvbS21rber8kETyDB//9T3BwI6lpySDg8+MC31jxm75k9s5Jk5sx5G2y8k2Ijo7hSKBnX/f9xDKdubkHMputC4J7GsOR+9sR0BwJ6hVFYC4lVdKKtEtHXKtGPPAT+tcX0BgLsC+x4MaK1gGjFICqUIDCReISg3qFOHY/WTPRQRA9lPoIyiVgg4v4R/DvwD+BvcIHvvpjlgYBRRwbryKCOxyrI4Fs/Ay25AFuDHS8G/xD+CFMzIXCzKGZ3lIGDDBy0vm6ihyJ6sIhShAjfuBj8Q/jrXOAwJ2Z7mIHDKGgExBwDPcD/Vxl7KCQ/pGgVdrwi+Hfgj2HKRnIBIr2BDBpo28EOav0e8nyELDj0vIPsOEYZxD0UIvijh3wwCnFpf/96QoimjQxsZGBjBw341yzsYRUCR6qq/vX9vQv1dVrDDrS+N0rrFyOysIeqnvyQkIGNDGxk8KeEPVRxCxof4e69mJ1RBtqw8iiLYQdhmkMym8igiQyaJnooogfobK1A4OcHMb8HAtw3LiuCP/ZQDJLegfwr7fzTGJRkI0gCgR3BnhKtcdkXkOSQWurUtGaTQVYCLtD1pqY7G4HtXDoO2t7DybOXanquzi5fhLi7mI7bY3/v6OnDIn9I8gKKBLO5xF57anqzOaTNhanBb570j6b8r+6cOW+CRxcQI5ptbJryAAAAAElFTkSuQmCC"/>
+                </a>
+            </label>
+            <label class="language">
+                <a href="#es"  ng-class="{'checked': lang == 'es'}">
+                    <img height="50"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAARVBMVEUAAACNEh8AAACVEyEtKAAAAACDERwpJAAAAAAAAAC2HSbPtwDtKDKfFSNmGRJNQwA4MQD/4ADtHzQAAADv0gDfHTH01gBLzlg6AAAAEXRSTlMA7bDv3/ns4K9k8/r38uDg34AgAnsAAAB3SURBVFjD7dY5FoAgDEVRUBkdIeD+l6qHY2FrYkHx7wJemXwF0IfgBwEflCERo4isZrNEd6BmtopANwE9sukWkGgBN7G5FiiJrSCAAAII/BZgnbRjTuf+OmnfbUukB+usrzXnODa6k8+EgDQgnnnioSmfugBduACH/acO9Z5+xAAAAABJRU5ErkJggg=="/>
+                </a>
+            </label>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <hr>
+
+    <div class="row hidden-print">
+        <div class="col-xs-12 col-sm-6">
+            <address>
+                <p class="visible-print-block">
+                    <i class="fa fa-map-marker"></i>
+                    {{address}}
+                    <br>
+                    {{provincyState}}
+                </p>
+                <a class="hidden-print" href="{{urlMaps}}" target="_blank">
+                    <i class="fa fa-map-marker" style="color: black"></i>
+                    {{address}}
+                    <br>
+                    <div style="margin-left: 10px;">{{provincyState}}</div>
+                </a>
+                <div class="clearfix"></div>
+                <i class="fa fa-phone"></i> {{phone}}
+                <div class="clearfix"></div>
+                <a class="hidden-print" href="mailto:#"><i class="fa fa-envelope" style="color: black"></i>
+                    {{email}}</a>
+                <p class="visible-print-block"><i class="fa fa-envelope"></i> {{email}}</p>
+                <p><i class="fa fa-skype" aria-hidden="true"></i> {{skype}}</p>
+            </address>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 text-center" style="margin-bottom: 10px">
+            <a href="https://www.linkedin.com/in/khwesten" class="linkedin" target="_blank">
+                <img height="50" src="imgs/linkedin-logo.png"/>
+            </a>
+            <div class="clearfix visible-print-block" style="margin: 5px 0"></div>
+            <a href="https://github.com/Khwesten" target="_blank" class="github">
+                <img height="50" src="imgs/github-big-logo.png"/>
+            </a>
+        </div>
+    </div>
+    <div class="row visible-print">
+        <div class="col-xs-6 col-sm-6">
+            <address>
+                <p class="visible-print-block">
+                    <i class="fa fa-map-marker"></i>
+                    {{address}}
+                    <br>
+                    {{provincyState}}
+                </p>
+                <a class="hidden-print" href="{{urlMaps}}" target="_blank">
+                    <i class="fa fa-map-marker" style="color: black"></i>
+                    {{address}}
+                    <br>
+                    <div style="margin-left: 10px;">{{provincyState}}</div>
+                </a>
+                <div class="clearfix"></div>
+                <i class="fa fa-phone"></i> {{phone}}
+                <div class="clearfix"></div>
+                <a class="hidden-print" href="mailto:#"><i class="fa fa-envelope" style="color: black"></i>
+                    {{email}}</a>
+                <p class="visible-print-block"><i class="fa fa-envelope"></i> {{email}}</p>
+                <p><i class="fa fa-skype" aria-hidden="true"></i> {{skype}}</p>
+            </address>
+        </div>
+        <div class="col-xs-6 col-sm-6 text-center">
+            <a href="https://www.linkedin.com/in/khwesten" target="_blank">
+                <img height="50" src="imgs/linkedin-logo.png"/>
+            </a>
+            <div class="clearfix visible-print-block" style="margin: 5px 0"></div>
+            <a href="https://github.com/Khwesten" target="_blank">
+                <img height="50" src="imgs/github-big-logo.png"/>
+            </a>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <hr style="margin-top: 10px">
+    <div class="clearfix"></div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <p ng-bind-html="main.description">{{main.description}}</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <!--<small><i>*{{main.phrase}}</i></small>-->
+    <!--<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>-->
+    <div class="row">
+        <div class="container text-center">
+            <h3 class="title text-left"><i class="fa fa-book"></i> {{main.menuKnowledge}}</h3>
+
+            <div class="col-lg-4">
+                <h4>0-1 {{main.yearSing}}</h4>
+                <div ng-repeat="xp in xp.study" class="back-tech">
+                    <img class="media-objects" ng-src="imgs64/{{xp.tech}}-logo.png"/>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h4>1-3 {{main.yearPlural}}</h4>
+                <div ng-repeat="xp in xp.intermediate" class="back-tech">
+                    <img class="media-objects" ng-src="imgs64/{{xp.tech}}-logo.png">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h4>3+ {{main.yearPlural}}</h4>
+                <div ng-repeat="xp in xp.advanced" class="back-tech">
+                    <img class="media-objects" ng-src="imgs64/{{xp.tech}}-logo.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <h3 class="title text-left col-lg-12"><i class="fa fa-users"></i> {{main.menuExperience}}</h3>
+
+        <div ng-repeat="job in main.jobs track by $index" class="col-lg-4 col-sm-6 col-xs-12 hidden-print"
+             data-toggle="tooltip"
+             data-placement="top" title="{{job.tools}}">
+            <div class="col-lg-12 col-xs-12 box-exp">
+                <h4>{{job.company}}</h4>
+                <small>{{job.date}}</small>
+                <h4>{{job.position}}</h4>
+                <small>{{job.locate}}</small>
+                <div class="clearfix"></div>
+                <p class="visible-print-inline-block visible-xs-inline-block">{{job.tools}}</p>
+            </div>
+        </div>
+        <div ng-repeat="job in main.jobs track by $index" class="col-lg-4 col-sm-6 col-xs-6 visible-print"
+             data-toggle="tooltip"
+             data-placement="top" title="{{job.tools}}">
+            <div class="col-lg-12 col-xs-12 box-exp">
+                <h4>{{job.company}}</h4>
+                <small>{{job.date}}</small>
+                <h4>{{job.position}}</h4>
+                <small>{{job.locate}}</small>
+                <div class="clearfix"></div>
+                <p class="visible-print-inline-block visible-xs-inline-block">{{job.tools}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="title text-left"><i class="fa fa-folder-open"></i> {{main.menuFreelance}}</h3>
+
+            <div ng-repeat="freelance in main.freelances">
+                <blockquote>
+                    <h4><strong>
+                        <a ng-href="{{freelance.url}}" target="_blank">
+                            {{freelance.name}}
+                        </a>
+                    </strong>
+                        {{freelance.date}}
+                    </h4>
+                    <p>
+                        {{freelance.description}}
+                    </p>
+                </blockquote>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>

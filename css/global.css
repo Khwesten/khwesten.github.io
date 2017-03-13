@@ -16,9 +16,12 @@ input[type=checkbox], input[type=radio] { margin: 4px -8px; }
 .github { background-color: #202020; padding: 25px 10px 25px 10px }
 .linkedin:hover { background-color: #F39C12; }
 .github:hover { background-color: #F39C12; }
-.test { margin-right: 5px }
-.test input { opacity: 0.0; -moz-opacity: 0.0; filter: alpha(opacity = 0); }
-.test input:checked + img { border: 2px solid #F39C12; padding: 5px; background-color: #202020 }
+.language { margin-right: 5px }
+/*.language input { opacity: 0.0; -moz-opacity: 0.0; filter: alpha(opacity = 0); }*/
+/*.language input:checked + img { border: 2px solid #F39C12; padding: 5px; background-color: #202020 }*/
+.language a { filter: grayscale(5) }
+.language a:hover { filter: grayscale(0) !important; }
+.language .checked { filter: grayscale(0) !important; }
 .container { background-color: #303030; color: white }
 .title { color: #F39C12; text-transform: uppercase; font-style: italic }
 .media-objects { max-height: 50px; max-width: 50px; }
