@@ -121,14 +121,14 @@ mainApp.controller('MainController', function MainController($scope, $sce, $rout
 
             freelances: [
                 {
-                    url: "",
+                    url: "http://leilao.espiga.com.br/",
                     name: "Tocantins leilões",
                     date: "2017",
                     description: "Site de leilão, usando CMS espiga(PHP + JQuery) e MySql. Criação de" +
                     " módulos, refatoração e reparo em código."
                 },
                 {
-                    url: "",
+                    url: "https://github.com/Khwesten/progress-me",
                     name: "ProgressMe",
                     date: "2016",
                     description: "Criação de API de acesso a dados para 'jogo' que simula um processo interno da empresa, usando PHP + Slim + MySql."
@@ -255,14 +255,14 @@ mainApp.controller('MainController', function MainController($scope, $sce, $rout
 
             freelances: [
                 {
-                    url: "",
+                    url: "http://leilao.espiga.com.br/",
                     name: "Tocantins leilões",
                     date: "2017",
                     description: "Website of auction, using CMS espiga(PHP + JQuery) and MySql. Creation of modules," +
                     " refactoring and repair on code."
                 },
                 {
-                    url: "",
+                    url: "https://github.com/Khwesten/progress-me",
                     name: "ProgressMe",
                     date: "2016",
                     description: "Creation of API to database access for the 'game' that simulate the internal process of company, developed with PHP + Slim + MySql."
@@ -389,14 +389,14 @@ mainApp.controller('MainController', function MainController($scope, $sce, $rout
 
             freelances: [
                 {
-                    url: "",
+                    url: "http://leilao.espiga.com.br/",
                     name: "Tocantins leilões",
                     date: "2017",
                     description: "Sitio web de subasta, utilizando CMS espiga (PHP + JQuery) y MySql. Creación de" +
                     " módulos de refactorización y reparación en código."
                 },
                 {
-                    url: "",
+                    url: "https://github.com/Khwesten/progress-me",
                     name: "ProgressMe",
                     date: "2016",
                     description: "Creación de API para acceder a la base de datos para el 'juego' que simulan el proceso interno de la empresa, desarrollado con PHP + MySQL + delgado."

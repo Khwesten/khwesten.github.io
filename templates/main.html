@@ -184,13 +184,15 @@
 
             <div ng-repeat="freelance in main.freelances">
                 <blockquote>
-                    <h4><strong>
-                        <a ng-href="{{freelance.url}}" target="_blank">
+                    <h4>
+                        <strong style="color: #F39C12;">
                             {{freelance.name}}
-                        </a>
-                    </strong>
+                        </strong>
                         {{freelance.date}}
                     </h4>
+                    <small>
+                        <a ng-href="{{freelance.url}}" target="_blank">{{freelance.url}}</a>
+                    </small>
                     <p>
                         {{freelance.description}}
                     </p>
