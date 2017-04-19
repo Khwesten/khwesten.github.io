@@ -100,7 +100,7 @@ mainApp.controller('MainController', function MainController($scope, $sce, $rout
                     tools: "CorelDraw e Photoshop",
                     company: "Promo Comunicação Visual",
                     date: "2012-2013",
-                    position: "Gerente/ Design",
+                    position: "Gerente/ Designer",
                     locate: "Maceió/AL"
                 },
                 {
@@ -234,7 +234,7 @@ mainApp.controller('MainController', function MainController($scope, $sce, $rout
                     tools: "CorelDraw e Photoshop",
                     company: "Promo Comunicação Visual",
                     date: "2012-2013",
-                    position: "Manager/ Design",
+                    position: "Manager/ Designer",
                     locate: "Maceió/AL"
                 },
                 {
@@ -368,7 +368,7 @@ mainApp.controller('MainController', function MainController($scope, $sce, $rout
                     tools: "CorelDraw e Photoshop",
                     company: "Promo Comunicação Visual",
                     date: "2012-2013",
-                    position: "Gerente/ Design",
+                    position: "Gerente/ Designer",
                     locate: "Maceió/AL"
                 },
                 {
