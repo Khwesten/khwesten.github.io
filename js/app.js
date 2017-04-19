@@ -449,7 +449,8 @@ mainApp.controller('MainController', function MainController($scope, $sce, $rout
             {tech: 'knockoutjs', desc: ''},
             {tech: 'mongodb', desc: ''},
             {tech: 'dynamodb', desc: ''},
-            {tech: 'ionic', desc: ''}
+            {tech: 'ionic', desc: ''},
+            {tech: 'graphql', desc: ''}
         ],
         advanced: [
             {tech: 'php', desc: ''},
