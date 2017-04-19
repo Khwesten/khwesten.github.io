@@ -9,7 +9,7 @@ mainApp.config(function ($routeProvider) {
             templateUrl: "./templates/main.html",
             controller: 'MainController'
         })
-        .otherwise("/pt", {
+        .otherwise("/en", {
             templateUrl: 'index.html',
             controller: 'MainController'
         });
