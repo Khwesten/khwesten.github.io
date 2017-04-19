@@ -15,13 +15,17 @@ mainApp.config(function ($routeProvider) {
         });
 });
 
-mainApp.controller('MainController', function MainController($scope, $sce, $routeParams, $http) {
+mainApp.controller('MainController', function MainController($scope, $sce, $routeParams, $http, $window) {
 
     $scope.lang = $routeParams.language;
 
-    $http({method: 'GET', url: 'data/' + $scope.lang + '.json'}).success(function(data, status, headers, config) {
-        $scope.main = data;
-    });
+    $http({method: 'GET', url: 'data/' + $scope.lang + '.json'})
+        .success(function (data, status, headers, config) {
+            $scope.main = data;
+        })
+        .error(function() {
+            $window.location.href = "#en"
+        });
 
     $scope.phone = "+55 (082) 9.9316-7395";
     $scope.email = "k-heiner@hotmail.com";
