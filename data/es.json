@@ -1,0 +1,150 @@
+{
+  "phrase": "El 10 nunca se alcanzará, al igual que el hombre, la tecnología está en constante evolución.",
+  "subtitle": "Desarrollador que trabaja desde 2010 con PHP desde el principio y expandirse a otros idiomas más adelante. Soy un MONSTRUOS dev, loco, sobre los retos codificador limpia y pesada jugador.",
+  "myName": "Mi nombre es",
+  "menuKnowledge": "Conocimiento",
+  "menuFreelance": "Freelances",
+  "menuExperience": "Experiencia",
+  "description": "<strong>Licenciatura</strong> en Análisis de Sistemas en la Facultad de Ciencias Exactas y Tecnológicas (FACET) del Centro de Estudios Superiores de Maceió (CESMAC). <br> <strong>Postgrado</strong> en ingeniería de software también por FACET/CESMAC.",
+  "situation": "Brasileño, solo",
+  "printable": "ESTE CV ES IMPRIMIBLE",
+  "yearSing": "AÑO",
+  "yearPlural": "AÑOS",
+  "what": "¿Qué?",
+  "how": "¿Cómo?",
+  "jobs": [
+    {
+      "tools": "HTML5, CSS3, JS, PHP e MySql",
+      "company": "TECK S",
+      "date": "Actual (de 07/16)",
+      "position": "Ingeniero de software Full-Stack (remoto)",
+      "locate": "Maceió/AL - João Pessoa/PB",
+      "what": "Continuo desarrollo y análisis de aplicaciones web (OndePlantei) que funciona con apoyo del PNUD y busca proporcionar una mejora del estado, regional y nacional del ambiente mediante la plantación de árboles El sistema es una pequeña gestión la plantación de árboles, guardar los datos de los que se plantó el árbol, que plantó en donde fue plantada y es un honor.", "how": "El sistema es una aplicación monolítica usando el patrón de arquitectura MVC, con el back-end hecho en PHP usando Doctrina ORM, base de datos MySQL y front-end, Bootstrap (html y css) usando SmartTemplate + jQuery y Google Maps."
+    },
+    {
+      "tools": "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
+      "company": "Palmasite",
+      "date": "2016-2017",
+      "position": "Programador Full-Stack Sr.(remoto)",
+      "locate": "Maceió/AL - TO",
+      "what": "Desarrollo y análisis de aplicaciones web continuado para las subastas públicas, gestión de subastas, subastas y sus tipos con temporizador a licitación, la única parte que no está hecho por la aplicación se paga, esto se hace externo al sistema.",
+      "how": "Aplicación monolítica usando patrón de arquitectura MVC, Backbend hecho en PHP con propia ORM de una empresa, front-end usando Bootstrap (html y css) con JQuery y MySQL como base de datos."
+    },
+    {
+      "tools": "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
+      "company": "MeuTutor",
+      "date": "2014-2017",
+      "position": "Ingeniero de software Full-Stack",
+      "locate": "Maceió/AL",
+      "what": "Desarrollo, análisis y web refactorización aplicaciones relacionadas con el ámbito educativo. El sistema principal se basó en tutorial inteligente, que ayudaron a los estudiantes a estudiar extra-clase, tratando de cumplir con los estilos educativos de nuestro país, tales como problemas similares ENEM. También tenía una aplicación móvil, espejo de la plataforma principal para el entorno móvil.",
+      "how": "En la primera versión del sistema principal que estábamos usando servicios web basados ​​en SOAP y una arquitectura en capas con el extremo posterior realizado en marco de Java sin y con el uso de la ontología como una base de datos. La parte delantera también consistió en una arquitectura en capas hecha con Bootstrap (HTML y CSS), PHP y JQuery. La segunda versión del sistema principal se cambió a la patrón arquitectónico REST utilizando el marco Dropwizard que utiliza Hibernate como ORM. El extremo delantero comenzó a ser ascendido a angularjs + Bootstrap (HTML y SCSS), pero no tienen una versión oficial, mantuvimos la capa de comunicación de jabón en paralelo al resto hasta que el nuevo front-end estaban trabajando. La aplicación móvil se hizo el jónico consumir datos V2 de back-end en REST. La evidencia de gestión de aplicaciones que llegó con Dropwizard en la parte final y ángulo en la parte delantera. Aunque la base de datos de dos back-end utilizando las mismas aplicaciones, el espejo se actualiza manualmente, tuve la idea de crear un microserviço usando Node.js, MongoDB GraphQl y para la gestión de bases de datos, pero no tienen una versión final . Svn, git y Scrum + Trello."
+    },
+    {
+      "tools": "MVC, HTML5, CSS3, JS(DurandalJS), PHP(Slim/Doctrine), MySql e REST",
+      "company": "Locadados",
+      "date": "2014-2015",
+      "position": "Programador Full-Stack Sr. (remoto)",
+      "locate": "Maceió/AL - Recife/PE",
+      "what": "Desarrollo y análisis de una aplicación para la gestión de flotas de vehículos integrado con el sistema GPS instalado en los coches que proporcionaron diferentes informaciones de estado del coche.",
+      "how": "Trello, Git, REST, PHP, Doctrina, Delgado, MySQL, Google Maps, y Durandal.js Bootstrap (HTML y CSS)."
+    },
+    {
+      "tools": "HTML5, CSS3, JS(jQuery), PHP e Postgress",
+      "company": "Bluevox",
+      "date": "2014",
+      "position": "Programador Full-Stack Pleno",
+      "locate": "Maceió/AL",
+      "what": "Desarrollo y análisis de módulo gráfico dental para el sistema dental.",
+      "how": "Git, PHP monolítico, MySQL, Bootstrap (HTML5/Canvas y CSS) y jQuery."
+    },
+    {
+      "tools": "HTML, CSS, JS, PHP e MySql",
+      "company": "Tami Eventos",
+      "date": "2014",
+      "position": "Programador PHP Pleno (remoto)",
+      "locate": "Maceió/AL",
+      "what": "Sistema de desarrollo y análisis web para la gestión de equipos y materiales de eventos.",
+      "how": "Git, PHP monolítico, MySQL, Bootstrap (HTML5 y CSS) y jQuery."
+    },
+    {
+      "tools": "Java, MySql e CMD script",
+      "company": "Farmácia Permanente",
+      "date": "2013",
+      "position": "Analista Help Desk",
+      "locate": "Maceió/AL",
+      "what": "Ayuda y acomputadores y apoyar a los usuarios y crear pequeños sistemas que han automatizado tareas internas.",
+      "how": "TeamViewer, scripts que crean 'bat' para ayudar a las actividades de apoyo a los usuarios y la creación de un pequeño sistema que automatizava tareas del sector financiero, como la actualización de las facturas entre los sistemas utilizados con Java para crear el mismo."
+    },
+    {
+      "tools": "CorelDraw e Photoshop",
+      "company": "Promo Comunicação Visual",
+      "date": "2012-2013",
+      "position": "Gerente/ Designer",
+      "locate": "Maceió/AL",
+      "what": "Gestión de efectivo, el sector operativo de personas y creación de identidad visual para empresas, fachadas y flota de vehículos.",
+      "how": "CorelDraw y Photoshop"
+    },
+    {
+      "tools": "TDD, Java, Hibernate e Oracle",
+      "company": "Indra/Politec",
+      "date": "2012",
+      "position": "Programador Java Jr.",
+      "locate": "Maceió/AL",
+      "what": "Refactoring y desarrollo de las capacidades de los sistemas de gobierno federal y estatal.",
+      "how": "SVN, TDD, Java, Hibernate y Oracle."
+    },
+    {
+      "tools": "HTML, CSS, JS, PHP e MySql",
+      "company": "Associação de Software Livre do Nordeste",
+      "date": "2011-2012",
+      "position": "Programador PHP Jr.",
+      "locate": "Maceió/AL",
+      "what": "Refactoring y desarrollo capacidades de los sistemas para el área de eventos.",
+      "how": "PHP, HTML, CSS, jQuery y MySQL"
+    }
+  ],
+  "freelances": [
+    {
+      "url": "",
+      "name": "Tocantins leilões",
+      "date": "2017",
+      "description": "Sitio web de subasta, utilizando CMS espiga (PHP + JQuery) y MySql. Creación de módulos de refactorización y reparación en código."
+    },
+    {
+      "url": "https://github.com/Khwesten/progress-me",
+      "name": "ProgressMe",
+      "date": "2016",
+      "description": "Creación de API para acceder a la base de datos para el 'juego' que simulan el proceso interno de la empresa, desarrollado con PHP + MySQL + delgado."
+    },
+    {
+      "url": "http://www.epizzaonline.com.br",
+      "name": "E-Pizza",
+      "date": "2016",
+      "description": "Sitio web de gestión de la empresa y la entrega, desarrollada con Symfony2 + MySQL. Creación de módulos de gestión de existencias, petición, barman y servicio de mensajería moto."
+    },
+    {
+      "url": "",
+      "name": "Congresso Alagoano de Tecnologia (COALTI)",
+      "date": "2011 / 2014 / 2016",
+      "description": "Sitio Web para el evento, desarrollado con PHP + Doctrina + Slim + + API AngularJS MoIP + MySQL. Gestión de altavoces, conferencias, los usuarios, los pagos y certificados."
+    },
+    {
+      "url": "",
+      "name": "Congresso Acadêmico Integrado de Inovação e Tecnologia (CAIITE)",
+      "date": "2015",
+      "description": "La plataforma de gestión de eventos, desarrollado con PHP + MySQL + Bootstrap. Gestión de los trabajos enviados (carga de archivos) y la gestión de correcciones, de generación de certificados y la gestión de los participantes."
+    },
+    {
+      "url": "http://www.ufal.br/pinacoteca/",
+      "name": "Pinacoteca",
+      "date": "2014",
+      "description": "Sitio Web de Pinacoteca de la Universidad Federal de Alagoas (UFAL), desarrollado con la Gestión de PHP + MySQL + Bootstrap. De eventos, avisos colección de imágenes, notificación y visitar la programación por correo electrónico."
+    },
+    {
+      "url": "http://www.treinal.com.br/",
+      "name": "Treinal",
+      "date": "2014",
+      "description": "Sitio web de la escuela de formación, desarrollado con la Gestión de PHP + MySQL + Bootstrap. De cursos, los pagos y los participantes."
+    }
+  ]
+}

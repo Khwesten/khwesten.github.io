@@ -12,16 +12,16 @@ input[type=checkbox], input[type=radio] { margin: 4px -8px; }
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td { border-top: none }
 .box-exp { background-color: #202020; text-align: center; margin-bottom: 10px; }
 .box-exp h4 { color: #F39C12;  }
+.box-exp .job-description { max-height: 300px; min-height: 200px; overflow-y: auto; text-align: left; margin: 20px 0; }
+.box-exp .job-description p { color: #F39C12 }
 .linkedin { background-color: #202020; padding: 25px 10px 25px 15px; margin-right: 5px }
 .github { background-color: #202020; padding: 25px 10px 25px 10px }
 .linkedin:hover { background-color: #F39C12; }
 .github:hover { background-color: #F39C12; }
 .language { margin-right: 5px }
-/*.language input { opacity: 0.0; -moz-opacity: 0.0; filter: alpha(opacity = 0); }*/
-/*.language input:checked + img { border: 2px solid #F39C12; padding: 5px; background-color: #202020 }*/
-.language a { filter: grayscale(5) }
-.language a:hover { filter: grayscale(0) !important; }
-.language .checked { filter: grayscale(0) !important; }
+.language a { opacity: 0.35 }
+.language a:hover { opacity: 1 !important; }
+.language .checked { opacity: 1 !important; }
 .container { background-color: #303030; color: white }
 .title { color: #F39C12; text-transform: uppercase; font-style: italic }
 .media-objects { max-height: 50px; max-width: 50px; }
@@ -29,10 +29,15 @@ input[type=checkbox], input[type=radio] { margin: 4px -8px; }
 .back-tech img { margin: auto }
 .printable-notice { position: fixed; background-color: #F39C12; color: black; right: 0; top: 0; z-index: 99999; padding: 5px }
 
+.jspDrag { background: #F39C12 }
+.jspTrack { background: #303030 }
+.jspVerticalBar { width: 10px }
+
 @media print {
-    .box-exp { border: none; text-align: left; border-left: 3px solid gray; border-radius: 0; height: 200px; }
+    .box-exp { border: none; text-align: left; border-left: 3px solid gray; border-radius: 0; margin-left: 15px; border-bottom: 3px solid gray; padding-bottom: 10px; margin-top: 10px }
     .box-exp h4 { font-weight: bold }
-    .page-break { page-break-before: always; }
+    .page-break { page-break-after: always; display: block; }
+    .box-exp .job-description p { font-weight: bold !important; }
     blockquote { border: none; border-left: 3px solid gray }
     a { color: black !important;     }
 }
