@@ -14,6 +14,15 @@
   "how": "¿Cómo?",
   "jobs": [
     {
+      "tools": "TS, PixiJS",
+      "company": "The Arcade Foundry",
+      "date": "Actual (de 03/17)",
+      "position": "Full-Stack developer (remoto)",
+      "locate": "Maceió/AL - Derby/England",
+      "what": "Cree un marco que proporcione algunas funciones para asistir a las funcionalidades básicas de un juego.",
+      "how": "Usando TS y PixiJs, creo una capa de abstracción que simplifica las funcionalidades básicas para hacer cualquier cosa, como por ejemplo: cómo mostrar un botón o campo de texto en el juego, o aún crear varias máquinas de estado."
+    },
+    {
       "tools": "HTML5, CSS3, JS, PHP e MySql",
       "company": "TECK S",
       "date": "Actual (de 07/16)",

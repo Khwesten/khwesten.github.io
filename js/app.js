@@ -44,7 +44,9 @@ mainApp.controller('MainController', function MainController($scope, $sce, $rout
             {tech: 'python', desc: ''},
             {tech: 'android', desc: ''},
             {tech: 'blender', desc: ''},
-            {tech: 'unity', desc: ''}
+            {tech: 'unity', desc: ''},
+            {tech: 'ts', desc: ''},
+            {tech: 'pixijs', desc: ''}
         ],
         intermediate: [
             {tech: 'nodejs', desc: ''},

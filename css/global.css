@@ -10,9 +10,9 @@ input[type=checkbox], input[type=radio] { margin: 4px -8px; }
 .my-photo { float: left; margin-right: 10px }
 .name { color: #F39C12; text-transform: uppercase }
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td { border-top: none }
-.box-exp { background-color: #202020; text-align: center; margin-bottom: 10px; }
-.box-exp h4 { color: #F39C12;  }
-.box-exp .job-description { max-height: 300px; min-height: 200px; overflow-y: auto; text-align: left; margin: 20px 0; }
+.box-exp { background-color: #202020; text-align: center; margin-bottom: 10px; /*height: 460px*/}
+.box-exp h4 { color: #F39C12; font-weight: bold  }
+.box-exp .job-description { max-height: 250px; min-height: 250px; overflow-y: auto; text-align: left; margin: 20px 0; }
 .box-exp .job-description p { color: #F39C12 }
 .linkedin { background-color: #202020; padding: 25px 10px 25px 15px; margin-right: 5px }
 .github { background-color: #202020; padding: 25px 10px 25px 10px }
