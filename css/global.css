@@ -39,5 +39,6 @@ input[type=checkbox], input[type=radio] { margin: 4px -8px; }
     .page-break { page-break-after: always; display: block; }
     .box-exp .job-description p { font-weight: bold !important; }
     blockquote { border: none; border-left: 3px solid gray }
-    a { color: black !important;     }
+    a { color: black !important; }
+    printable-notice { display: none }
 }
