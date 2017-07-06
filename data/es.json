@@ -25,7 +25,7 @@
     {
       "tools": "HTML5, CSS3, JS, PHP e MySql",
       "company": "TECK S",
-      "date": "Actual (de 07/16)",
+      "date": "2016-2017",
       "position": "Ingeniero de software Full-Stack (remoto)",
       "locate": "Maceió/AL - João Pessoa/PB",
       "what": "Continuo desarrollo y análisis de aplicaciones web (OndePlantei) que funciona con apoyo del PNUD y busca proporcionar una mejora del estado, regional y nacional del ambiente mediante la plantación de árboles El sistema es una pequeña gestión la plantación de árboles, guardar los datos de los que se plantó el árbol, que plantó en donde fue plantada y es un honor.", "how": "El sistema es una aplicación monolítica usando el patrón de arquitectura MVC, con el back-end hecho en PHP usando Doctrina ORM, base de datos MySQL y front-end, Bootstrap (html y css) usando SmartTemplate + jQuery y Google Maps."

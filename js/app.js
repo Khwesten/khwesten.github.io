@@ -1,6 +1,3 @@
-/**
- * Created by NoteSamsung on 25/06/2016.
- */
 var mainApp = angular.module('mainApp', ['ngSanitize', 'ngRoute', 'ngJScrollPane']);
 
 mainApp.config(function ($routeProvider) {
