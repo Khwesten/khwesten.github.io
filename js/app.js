@@ -38,12 +38,12 @@ mainApp.controller('MainController', function MainController($scope, $sce, $rout
     $scope.xp = {
         study: [
             {tech: 'csharp', desc: ''},
-            {tech: 'python', desc: ''},
             {tech: 'android', desc: ''},
             {tech: 'blender', desc: ''},
             {tech: 'unity', desc: ''},
             {tech: 'ts', desc: ''},
-            {tech: 'pixijs', desc: ''}
+            {tech: 'pixijs', desc: ''},
+            {tech: 'rails', desc: ''}
         ],
         intermediate: [
             {tech: 'nodejs', desc: ''},
