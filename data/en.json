@@ -15,7 +15,7 @@
   "jobs": [
     {
       "tools": "TS, PixiJS",
-      "company": "The Arcade Foundry",
+      "company": "02.2017-07.2017",
       "date": "Current (since 03/17)",
       "position": "Full-Stack developer (remote)",
       "locate": "Maceió/AL - Derby/England",
@@ -23,43 +23,43 @@
       "how": "Using TS and PixiJs, I create a layer of abstraction that simplify the basic functionalities to make anything, like as: how show an button or textfield in game, or still create various state machines."
     },
     {
-      "tools": "HTML5, CSS3, JS, PHP e MySql",
+      "tools": "HTML5, CSS3, JS, PHP and MySql",
       "company": "TECK S",
-      "date": "2016-2017",
+      "date": "07.2016-03.2017",
       "position": "Full-Stack software engineer (remote)",
       "locate": "Maceió/AL - João Pessoa/PB",
       "what": "Continued development and analysis for web application (OndePlante) that works with PNUD support and seeks to improve the state, regional and national environment by planting trees. Planting trees, keeping data of which tree was planted, who planted, where it was planted and whether it is a tribute.",
       "how": "The system is a monolithic application using the MVC architectural standard, with the back-end done in PHP using Doctrine ORM, MySql database and front-end, Bootstrap (html and css) using SmartTemplate + JQuery and Google Maps."
     },
     {
-      "tools": "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
+      "tools": "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel and CodeIgniter), MySql and SOAP/REST",
       "company": "Palmasite",
-      "date": "2016-2017",
+      "date": "12.2016-02.2017",
       "position": "Full-Stack Sr. Developer (remote)",
       "locate": "Maceió/AL - TO",
       "what": "Continuation of development and analysis for web application for public auctions, auctioneers management, auctions and their respective types, with timer for the bids, the only part that is not made by the application is the payment, this is done externally To the system.",
       "how": "Monolithic application using MVC architectural pattern, Backbend made in PHP with a company own ORM, front end using Bootstrap (html and css) with JQuery and MySql as database."
     },
     {
-      "tools": "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
+      "tools": "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql and SOAP/REST/GraphQl",
       "company": "MeuTutor",
-      "date": "2014-2017",
+      "date": "04.2014-02.2017",
       "position": "Full-Stack software engineer",
       "locate": "Maceió/AL",
       "what": "The main system was based on intelligent tutoring, which helped students to study extra-class, trying to meet the educational styles of our country, for example, Of ENEM.We also had a mobile application, mirror of the main platform for mobile environment.",
       "how": "In the first version of the main system we used SOAP-based webservices and a layered architecture with the backend JAVA without a framework and the use of ontology as a database.The front end consisted of an architecture Also in layers made with Bootstrap (html and css), PHP and JQuery.The second version of the main system has been changed to the REST architectural standard using the Dropwizard framework which uses Hibernate as ORM.The front end has been upgraded to Angular .js + Bootstrap (Html ​​and Scss) but did not have an official version, we kept the Soap communication layer parallel to Rest until the new front end was working.The mobile application was done on Ionic consuming back- End V2 in REST The test management application was built with Dropwizard on the backend and Angle on the front end.Although both backend applications used the same database, the mirror was updated manually, I had the idea of Create a microservice using Node.js, GraphQl and MongoDb to manage the databases, but did not even have a final version. Svn, Git, and Scrum + Trello."
     },
     {
-      "tools": "MVC, HTML5, CSS3, JS(DurandalJS), PHP(Slim/Doctrine), MySql e REST",
+      "tools": "MVC, HTML5, CSS3, JS(DurandalJS), PHP(Slim/Doctrine), MySql and REST",
       "company": "Locadados",
-      "date": "2014-2015",
+      "date": "12.2014-12.2015",
       "position": "Full-Stack Sr. developer (remote)",
       "locate": "Maceió/AL - Recife/PE",
       "what": "Development and analysis of an application for vehicle fleet management integrated with GPS system installed in the cars which provided various car status information.",
       "how": "Trello, Git, REST, PHP, Doctrine, Slim, MySql, Google Maps, Durandal.js and Bootstrap (html and css)."
     },
     {
-      "tools": "HTML5, CSS3, JS(jQuery), PHP e Postgress",
+      "tools": "HTML5, CSS3, JS(jQuery), PHP and Postgress",
       "company": "Bluevox",
       "date": "2014",
       "position": "Full-Stack Plain developer",
@@ -68,7 +68,7 @@
       "how": "Git, Monolithic, PHP, MySql, Bootstrap (html5 / canvas and css) and JQuery."
     },
     {
-      "tools": "HTML, CSS, JS, PHP e MySql",
+      "tools": "HTML, CSS, JS, PHP and MySql",
       "company": "Tami Eventos",
       "date": "2014",
       "position": "PHP Plain developer (remote)",
@@ -77,7 +77,7 @@
       "how": "Git, Monolithic, PHP, MySql, Bootstrap (html and css) and JQuery."
     },
     {
-      "tools": "Java, MySql e CMD script",
+      "tools": "Java, MySql and CMD script",
       "company": "Farmácia Permanente",
       "date": "2013",
       "position": "Help Desk analyst",
@@ -86,7 +86,7 @@
       "how": "Teamviewer, '.bat' scripting to aid in user support activities and the creation of a small system that automated financial sector tasks such as updating invoices between used systems, using Java for Creation of it."
     },
     {
-      "tools": "CorelDraw e Photoshop",
+      "tools": "CorelDraw and Photoshop",
       "company": "Promo Comunicação Visual",
       "date": "2012-2013",
       "position": "Manager/ Designer",
@@ -95,7 +95,7 @@
       "how": "CorelDraw and PhotoShop."
     },
     {
-      "tools": "TDD, Java, Hibernate e Oracle",
+      "tools": "TDD, Java, Hibernate and Oracle",
       "company": "Indra/Politec",
       "date": "2012",
       "position": "Java Jr. developer",
@@ -104,7 +104,7 @@
       "how": "Svn, TDD, Java, Hibernate and Oracle."
     },
     {
-      "tools": "HTML, CSS, JS, PHP e MySql",
+      "tools": "HTML, CSS, JS, PHP and MySql",
       "company": "Associação de Software Livre do Nordeste",
       "date": "2011-2012",
       "position": "PHP Jr. developer",
@@ -113,7 +113,6 @@
       "how": "PHP, Html, Css, JQuery and Mysql"
     }
   ],
-
   "freelances": [
     {
       "url": "",
@@ -141,7 +140,7 @@
     },
     {
       "url": "",
-      "name": "Congresso Acadêmico Integrado de Inovação e Tecnologia (CAIITE)",
+      "name": "Congresso Acadêmico Integrado de Inovação and Tecnologia (CAIITE)",
       "date": "2015",
       "description": "Management platform from event, developed with PHP + Bootstrap + MySql. Management of sent jobs(file upload) and management of corrections, generating of certificates and management of participants."
     },

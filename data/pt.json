@@ -16,7 +16,7 @@
     {
       "tools": "TS, PixiJS",
       "company": "The Arcade Foundry",
-      "date": "Atual (desde 03/17)",
+      "date": "02.2017-07.2017",
       "position": "Full-Stack developer (remoto)",
       "locate": "Maceió/AL - Derby/England",
       "what": "Criação de um framework que provê algumas funções para atender funcionalidades básicas de um jogo.",
@@ -25,7 +25,7 @@
     {
       "tools": "HTML5, CSS3, JS, PHP e MySql",
       "company": "TECK S",
-      "date": "2016-2017",
+      "date": "07.2016-03.2017",
       "position": "Eng. de software Full-Stack (remoto)",
       "locate": "Maceió/AL - João Pessoa/PB",
       "what": "Continuação de desenvolvimento e análise para aplicação web (Onde Plantei) que funciona com apoio do PNUD e que busca proporcionar uma melhoria do meio ambiente estadual, regional e nacional com o plantio de árvores. O sistema faz um pequeno gerenciamento do plantio de árvores, guardando dados de qual árvore foi plantada, quem plantou, onde foi plantada e se é uma homenagem.",
@@ -34,7 +34,7 @@
     {
       "tools": "HTML5, CSS3, JS(jQuery), PHP(Smarty, Doctrine, Laravel e CodeIgniter), MySql e SOAP/REST",
       "company": "Palmasite",
-      "date": "2016-2017",
+      "date": "12.2016-02.2017",
       "position": "Programador Full-Stack Sr. (remoto)",
       "locate": "Maceió/AL - TO",
       "what": "Continuação de desenvolvimento e análise para aplicação web para leilões públicos, gerenciamento de leiloeiros, leilões e seus respectivos tipos, com temporizador para os lances, a única parte que não é feita pela aplicação é o pagamento, isso é feito externo ao sistema.",
@@ -43,7 +43,7 @@
     {
       "tools": "SCRUM, HTML5, CSS3, JS(jQuery, Angular, Ionic), PHP(Smarty)/Java(Jax-rs, dropwizard)/NodeJs, MySql e SOAP/REST/GraphQl",
       "company": "MeuTutor",
-      "date": "2014-2017",
+      "date": "04.2014-02.2017",
       "position": "Eng. de software Full-Stack",
       "locate": "Maceió/AL",
       "what": "Desenvolvimento, análise e refatoração de aplicações web voltadas ao ramo educacional. O sistema principal era baseado em tutoria inteligente, o qual ajudava alunos a estudarem extra-classe, tentando ao máximo atender aos estilos educacionais do nosso país, como por exemplo questões similares as do ENEM. Também tínhamos uma aplicação mobile, espelho da plataforma principal para ambiente mobile.",
@@ -53,7 +53,7 @@
     {
       "tools": "MVC, HTML5, CSS3, JS(DurandalJS), PHP(Slim/Doctrine), MySql e REST",
       "company": "Locadados",
-      "date": "2014-2015",
+      "date": "12.2014-12.2015",
       "position": "Programador Full-Stack Sr. (remoto)",
       "locate": "Maceió/AL - Recife/PE",
       "what": "Desenvolvimento e análise de uma aplicação para gerenciamento de frota de veículos integrado com sistema GPS instalado nos carros o qual fornecia várias informações de estado do carro.",
