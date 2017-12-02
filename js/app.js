@@ -20,7 +20,7 @@ mainApp.controller('MainController', function MainController($scope, $sce, $rout
         .success(function (data, status, headers, config) {
             $scope.main = data;
         })
-        .error(function() {
+        .error(function () {
             $window.location.href = "#en"
         });
 

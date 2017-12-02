@@ -14,6 +14,15 @@
   "how": "How?",
   "jobs": [
     {
+      "tools": "Ruby(Rails, RSpec and Capybara), Kanban, MySql, Git",
+      "company": "Gympass",
+      "date": "02.2017 Current",
+      "position": "Full-Stack Pl developer",
+      "locate": "São Paulo/SP",
+      "what": "Refactor and make new code to improve performance and new features to system.",
+      "how": "Creating many test to try cover the maximun features in the system, improve on code to be more performatic and some times, doing queries on database to improve performance. Use git to developmentt flow, making PRs e doing CodeReview."
+    },
+    {
       "tools": "TS, PixiJS",
       "company": "The arcade foundry",
       "date": "02.2017-07.2017",

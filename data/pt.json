@@ -14,6 +14,15 @@
   "how": "Como?",
   "jobs": [
     {
+      "tools": "Ruby(Rails, RSpec and Capybara), Kanban, MySql, Git",
+      "company": "Gympass",
+      "date": "08.2017 Atual",
+      "position": "Full-Stack Pl developer",
+      "locate": "São Paulo/SP",
+      "what": "Refatoração e criação de novos códigos para melhorar a performance e criação de novas features.",
+      "how": "Criando muitos testes para tentar cobrir o máximo de features no sistema, melhorando o código para se tornar mais performático e algumas vezes usando queries no banco de dados para ganhar performance. Uso do git para flow de desenvolvimento, criando PRs e fazendo CodeReview."
+    },
+    {
       "tools": "TS, PixiJS",
       "company": "The Arcade Foundry",
       "date": "02.2017-07.2017",
