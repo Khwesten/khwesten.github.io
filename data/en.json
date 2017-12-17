@@ -1,6 +1,6 @@
 {
   "phrase": "The 10 will never be reached, as well as man, the technology is constantly evolving.",
-  "subtitle": "Developer since 2010 working with PHP from beginning and expanding to other languages until the end. I'm a dev MONSTER, crazy for challenges, clean coder and heavy gamer.",
+  "subtitle": "Developer since 2010 working with PHP from beginning and expanding to other languages until now. I'm a dev MONSTER, crazy for challenges, clean coder and heavy gamer.",
   "myName": "My name is",
   "menuKnowledge": "Knowledge",
   "menuFreelance": "Freelances",
@@ -17,7 +17,7 @@
       "tools": "Ruby(Rails, RSpec and Capybara), Kanban, MySql, Git",
       "company": "Gympass",
       "date": "02.2017 Current",
-      "position": "Full-Stack Pl developer",
+      "position": "Full-Stack developer",
       "locate": "São Paulo/SP",
       "what": "Refactor and make new code to improve performance and new features to system.",
       "how": "Creating many test to try cover the maximun features in the system, improve on code to be more performatic and some times, doing queries on database to improve performance. Use git to developmentt flow, making PRs e doing CodeReview."
