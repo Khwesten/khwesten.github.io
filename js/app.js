@@ -42,10 +42,10 @@ mainApp.controller('MainController', function MainController($scope, $sce, $rout
             {tech: 'blender', desc: ''},
             {tech: 'unity', desc: ''},
             {tech: 'ts', desc: ''},
-            {tech: 'pixijs', desc: ''},
-            {tech: 'rails', desc: ''}
+            {tech: 'pixijs', desc: ''}
         ],
         intermediate: [
+            {tech: 'rails', desc: ''},
             {tech: 'nodejs', desc: ''},
             {tech: 'angular', desc: ''},
             {tech: 'knockoutjs', desc: ''},
