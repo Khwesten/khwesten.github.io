@@ -24,12 +24,13 @@ mainApp.controller('MainController', function MainController($scope, $sce, $rout
             $window.location.href = "#en"
         });
 
-    $scope.phone = "+55 (082) 9.9316-7395";
+    $scope.phone = "+55 (082) 9.9804-4490";
     $scope.email = "k-heiner@hotmail.com";
     $scope.skype = "khwesten.heiner";
-    $scope.address = "Av. Sebastião Correia Rocha, Nº 1113 - Bl. 03 Ap. 02";
-    $scope.provincyState = "Tabuleiro do Martins - Maceió / AL";
-    $scope.urlMaps = "https://www.google.com.br/maps/place/Tabuleiro+do+Martins,+Macei%C3%B3+-+AL,+57061-410/@-9.5934739,-35.7692318,15z/data=!3m1!4b1!4m2!3m1!1s0x70148940e6771d9:0x3f32b2a34da75b70";
+    $scope.address = "Vila Indiana 911";
+    $scope.provincyState = "Butantã - São Paulo/ SP";
+    $scope.urlMaps = "https://www.google.com.br/maps/place/Vila+Indiana,+S%C3%A3o+Paulo+-+SP,+05586-001/@-23.5737044,-46.7294895,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce566850cd1659:0x8c592455e465adb3!8m2!3d-23.5735625!4d-46.7279861";
+    // $scope.urlMaps = "https://www.google.com.br/maps/place/Tabuleiro+do+Martins,+Macei%C3%B3+-+AL,+57061-410/@-9.5934739,-35.7692318,15z/data=!3m1!4b1!4m2!3m1!1s0x70148940e6771d9:0x3f32b2a34da75b70";
 
     var decreasYears = (new Date().getMonth() + 1 >= 7) ? 0 : 1;
     var currentYear = new Date().getFullYear();
